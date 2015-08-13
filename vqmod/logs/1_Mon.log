@@ -1,0 +1,14 @@
+---------- Date: 2015-04-27 10:35:14 ~ IP : 87.117.191.153 ----------
+REQUEST URI : /index.php?route=product/category&amp;path=20
+MOD DETAILS:
+   modFile   : /home/u297281350/public_html/vqmod/xml/extended_category_show.xml
+   id        : Extended category show for megrel
+   version   : 0.1
+   vqmver    : 
+   author    : Shashakhmetov Talgat[talgatks@gmail.com]
+
+File Name    : catalog/model/catalog/category.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): public function getCategories($id = 0, $type = 'by_parent') {
+----------------------------------------------------------------------
+
+

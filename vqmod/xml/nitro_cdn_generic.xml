@@ -1,0 +1,262 @@
+<modification>
+	<id>Nitro CDN Mod for OpenCart</id>
+	<version>1.5.5.x</version>
+	<vqmver>1.0</vqmver>
+	<author>iSenseLabs.com</author>
+	
+	<file name="catalog/model/tool/image.php">
+		<operation error="log">
+			<search position="before"><![CDATA[public function resize(]]></search>
+			<add><![CDATA[
+				private function cdn_rewrite($host_url, $new_image) {
+					$host_url = preg_replace('@image\/?$@', '', $host_url);
+					require_once(DIR_SYSTEM.'nitro/config.php');
+					require_once(DIR_SYSTEM.'nitro/core/core.php');
+					$nitroPersistence = getNitroPersistence();
+					$nitro_result = $host_url . 'image/' . $new_image;
+					
+					if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNStandard']['Enabled']) && $nitroPersistence['Nitro']['CDNStandard']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNStandard']['ServeImages']) && $nitroPersistence['Nitro']['CDNStandard']['ServeImages'] == 'yes' && !(function_exists('areWeInIgnoredUrl') && areWeInIgnoredUrl())) {
+					
+						$nitro_has_ftp_persistence = false;
+						
+						$nitro_has_ftp_to_cdn = !empty($nitroPersistence['Nitro']['CDNStandardFTP']['Enabled']) && $nitroPersistence['Nitro']['CDNStandardFTP']['Enabled'] == 'yes';
+						
+						if ($nitro_has_ftp_to_cdn) {
+							$nitro_ftp_persistence = getFTPPersistence();
+							$nitro_has_ftp_persistence = in_array('image/' . $new_image, $nitro_ftp_persistence);
+						} else {
+							$nitro_has_ftp_persistence = true;
+						}
+					
+						if ($nitro_has_ftp_persistence && !empty($nitroPersistence['Nitro']['CDNStandard']['ImagesHttpsUrl'])) {
+							$nitro_url = substr($nitroPersistence['Nitro']['CDNStandard']['ImagesHttpsUrl'], strlen($nitroPersistence['Nitro']['CDNStandard']['ImagesHttpsUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNStandard']['ImagesHttpsUrl'] : $nitroPersistence['Nitro']['CDNStandard']['ImagesHttpsUrl'] . '/';
+							$nitro_result = $nitro_url . 'image/' . $new_image;
+						} else if ($nitro_has_ftp_persistence && !empty($nitroPersistence['Nitro']['CDNStandard']['ImagesHttpUrl'])) {
+							$nitro_url = substr($nitroPersistence['Nitro']['CDNStandard']['ImagesHttpUrl'], strlen($nitroPersistence['Nitro']['CDNStandard']['ImagesHttpUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNStandard']['ImagesHttpUrl'] : $nitroPersistence['Nitro']['CDNStandard']['ImagesHttpUrl'] . '/';
+							$nitro_result = $nitro_url . 'image/' . $new_image;
+						}
+					} else if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNAmazon']['Enabled']) && $nitroPersistence['Nitro']['CDNAmazon']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNAmazon']['ServeImages']) && $nitroPersistence['Nitro']['CDNAmazon']['ServeImages'] == 'yes' && !(function_exists('areWeInIgnoredUrl') && areWeInIgnoredUrl())) {
+						
+						$nitro_amazon_persistence = getAmazonPersistence();
+						$nitro_has_amazon_persistence = in_array('image/' . $new_image, $nitro_amazon_persistence);
+					
+						if ($nitro_has_amazon_persistence && !empty($nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl'])) {
+							$nitro_url = substr($nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl'], strlen($nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl'] : $nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl'] . '/';
+							$nitro_result = $nitro_url . 'image/' . $new_image;
+						} else if ($nitro_has_amazon_persistence && !empty($nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'])) {
+							$nitro_url = substr($nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'], strlen($nitroPersistence['Nitro']['CDNAmazon']['HttpUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'] : $nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'] . '/';
+							$nitro_result = $nitro_url . 'image/' . $new_image;
+						}
+					} else if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNRackspace']['Enabled']) && $nitroPersistence['Nitro']['CDNRackspace']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNRackspace']['ServeImages']) && $nitroPersistence['Nitro']['CDNRackspace']['ServeImages'] == 'yes' && !(function_exists('areWeInIgnoredUrl') && areWeInIgnoredUrl())) {
+						
+						$nitro_amazon_persistence = getRackspacePersistence();
+						$nitro_has_amazon_persistence = in_array('image/' . $new_image, $nitro_amazon_persistence);
+					
+						if ($nitro_has_amazon_persistence && !empty($nitroPersistence['Nitro']['CDNRackspace']['ImagesHttpsUrl'])) {
+							$nitro_url = substr($nitroPersistence['Nitro']['CDNRackspace']['ImagesHttpsUrl'], strlen($nitroPersistence['Nitro']['CDNRackspace']['ImagesHttpsUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNRackspace']['ImagesHttpsUrl'] : $nitroPersistence['Nitro']['CDNRackspace']['ImagesHttpsUrl'] . '/';
+							$nitro_result = $nitro_url . 'image/' . $new_image;
+						} else if ($nitro_has_amazon_persistence && !empty($nitroPersistence['Nitro']['CDNRackspace']['ImagesHttpUrl'])) {
+							$nitro_url = substr($nitroPersistence['Nitro']['CDNRackspace']['ImagesHttpUrl'], strlen($nitroPersistence['Nitro']['CDNRackspace']['ImagesHttpUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNRackspace']['ImagesHttpUrl'] : $nitroPersistence['Nitro']['CDNRackspace']['ImagesHttpUrl'] . '/';
+							$nitro_result = $nitro_url . 'image/' . $new_image;
+						}
+					}
+					
+					return $nitro_result;
+				}
+			]]></add>
+		</operation>
+	
+		<operation info="Overriding the output Images HTTPS URL" error="skip">
+			<search position="replace"><![CDATA[return $this->config->get('config_ssl') . 'image/' . $new_image;]]></search>
+			<add><![CDATA[
+				return $this->cdn_rewrite($this->config->get('config_ssl'), $new_image);
+			]]></add>
+		</operation>
+		<operation info="Overriding the output Images HTTPS URL" error="skip">
+			<search position="replace"><![CDATA[return HTTPS_IMAGE . $new_image;]]></search>
+			<add><![CDATA[
+				return $this->cdn_rewrite(HTTPS_IMAGE, $new_image);
+			]]></add>
+		</operation>
+		<operation info="Overriding the output Images HTTP URL" error="skip">
+			<search position="replace"><![CDATA[return $this->config->get('config_url') . 'image/' . $new_image;]]></search>
+			<add><![CDATA[
+				return $this->cdn_rewrite($this->config->get('config_url'), $new_image);
+			]]></add>
+		</operation>
+		<operation info="Overriding the output Images HTTP URL" error="skip">
+			<search position="replace"><![CDATA[return HTTP_IMAGE . $new_image;]]></search>
+			<add><![CDATA[
+				return $this->cdn_rewrite(HTTP_IMAGE, $new_image);
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/controller/common/header.php">
+		<operation info="Overriding the output CSS URL" error="log">
+			<search position="after"><![CDATA[$this->data['styles'] = $this->document->getStyles();]]></search>
+			<add><![CDATA[
+				require_once(DIR_SYSTEM.'nitro/config.php');
+				require_once(DIR_SYSTEM.'nitro/core/core.php');
+				$nitroPersistence = getNitroPersistence();
+				
+				$nitro_has_ftp_to_cdn = !empty($nitroPersistence['Nitro']['CDNStandardFTP']['Enabled']) && $nitroPersistence['Nitro']['CDNStandardFTP']['Enabled'] == 'yes';
+				
+				if ($nitro_has_ftp_to_cdn) {
+					$nitro_ftp_persistence = getFTPPersistence();
+				} else {
+					$nitro_ftp_persistence = array();
+				}
+				
+				$nitro_amazon_persistence = getAmazonPersistence();
+				$nitro_rackspace_persistence = getRackspacePersistence();
+				
+				$nitro_has_css_minification = (!empty($nitroPersistence['Nitro']['Mini']['Enabled']) && $nitroPersistence['Nitro']['Mini']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['Mini']['CSS']) && $nitroPersistence['Nitro']['Mini']['CSS'] == 'yes');
+				
+				$nitro_amazon_condition = !empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNAmazon']['Enabled']) && $nitroPersistence['Nitro']['CDNAmazon']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNAmazon']['ServeCSS']) && $nitroPersistence['Nitro']['CDNAmazon']['ServeCSS'] == 'yes';
+				$nitro_rackspace_condition = !empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNRackspace']['Enabled']) && $nitroPersistence['Nitro']['CDNRackspace']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNRackspace']['ServeCSS']) && $nitroPersistence['Nitro']['CDNRackspace']['ServeCSS'] == 'yes';
+				
+				$nitro_css_minify_condition = ($nitro_has_css_minification && $nitro_has_ftp_to_cdn) || !$nitro_has_css_minification;
+
+				if (($nitro_css_minify_condition || $nitro_amazon_condition || $nitro_rackspace_condition) && !(function_exists('areWeInIgnoredUrl') && areWeInIgnoredUrl())) {
+				
+					foreach ($this->data['styles'] as $nitro_index => $nitro_value) {
+					
+						$nitro_relative = stripos($nitro_value['href'], 'http://') === 0 ? false : (stripos($nitro_value['href'], 'https://') === 0 ? false : true);
+						
+						if ($nitro_css_minify_condition && $nitro_relative && !empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNStandard']['Enabled']) && $nitroPersistence['Nitro']['CDNStandard']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNStandard']['ServeCSS']) && $nitroPersistence['Nitro']['CDNStandard']['ServeCSS'] == 'yes') {
+							$nitro_has_ftp_persistence = false;
+							if ($nitro_has_ftp_to_cdn) {
+								$nitro_check_ftp_value = substr($nitro_value['href'], 0, 1) == '/' ? substr($nitro_value['href'], 1) : $nitro_value['href'];
+								$nitro_has_ftp_persistence = in_array($nitro_check_ftp_value, $nitro_ftp_persistence);
+							} else {
+								$nitro_has_ftp_persistence = true;
+							}
+						
+							if ($nitro_has_ftp_persistence && !empty($nitroPersistence['Nitro']['CDNStandard']['CSSHttpsUrl']) && isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+								$nitro_href = substr($nitro_value['href'], 0, 1) == '/' ? substr($nitro_value['href'], 1) : $nitro_value['href'];
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNStandard']['CSSHttpsUrl'], strlen($nitroPersistence['Nitro']['CDNStandard']['CSSHttpsUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNStandard']['CSSHttpsUrl'] : $nitroPersistence['Nitro']['CDNStandard']['CSSHttpsUrl'] . '/';
+								
+								$this->data['styles'][$nitro_index]['href'] = $nitro_url . $nitro_href;
+							} else if ($nitro_has_ftp_persistence && !empty($nitroPersistence['Nitro']['CDNStandard']['CSSHttpUrl'])) {
+								$nitro_href = substr($nitro_value['href'], 0, 1) == '/' ? substr($nitro_value['href'], 1) : $nitro_value['href'];
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNStandard']['CSSHttpUrl'], strlen($nitroPersistence['Nitro']['CDNStandard']['CSSHttpUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNStandard']['CSSHttpUrl'] : $nitroPersistence['Nitro']['CDNStandard']['CSSHttpUrl'] . '/';
+								
+								$this->data['styles'][$nitro_index]['href'] = $nitro_url . $nitro_href;
+							}
+						} else if ($nitro_amazon_condition && $nitro_relative) {
+							
+							$nitro_check_amazon_value = substr($nitro_value['href'], 0, 1) == '/' ? substr($nitro_value['href'], 1) : $nitro_value['href'];
+							$nitro_has_amazon_persistence = in_array($nitro_check_amazon_value, $nitro_amazon_persistence);
+						
+							if ($nitro_has_amazon_persistence && !empty($nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl']) && isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+								$nitro_href = substr($nitro_value['href'], 0, 1) == '/' ? substr($nitro_value['href'], 1) : $nitro_value['href'];
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl'], strlen($nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl'] : $nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl'] . '/';
+								
+								$this->data['styles'][$nitro_index]['href'] = $nitro_url . $nitro_href;
+							} else if ($nitro_has_amazon_persistence && !empty($nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'])) {
+								$nitro_href = substr($nitro_value['href'], 0, 1) == '/' ? substr($nitro_value['href'], 1) : $nitro_value['href'];
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'], strlen($nitroPersistence['Nitro']['CDNAmazon']['HttpUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'] : $nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'] . '/';
+								
+								$this->data['styles'][$nitro_index]['href'] = $nitro_url . $nitro_href;
+							}
+						} else if ($nitro_rackspace_condition && $nitro_relative) {
+							
+							$nitro_check_rackspace_value = substr($nitro_value['href'], 0, 1) == '/' ? substr($nitro_value['href'], 1) : $nitro_value['href'];
+							$nitro_has_rackspace_persistence = in_array($nitro_check_rackspace_value, $nitro_rackspace_persistence);
+						
+							if ($nitro_has_rackspace_persistence && !empty($nitroPersistence['Nitro']['CDNRackspace']['CSSHttpsUrl']) && isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+								$nitro_href = substr($nitro_value['href'], 0, 1) == '/' ? substr($nitro_value['href'], 1) : $nitro_value['href'];
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNRackspace']['CSSHttpsUrl'], strlen($nitroPersistence['Nitro']['CDNRackspace']['CSSHttpsUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNRackspace']['CSSHttpsUrl'] : $nitroPersistence['Nitro']['CDNRackspace']['CSSHttpsUrl'] . '/';
+								
+								$this->data['styles'][$nitro_index]['href'] = $nitro_url . $nitro_href;
+							} else if ($nitro_has_rackspace_persistence && !empty($nitroPersistence['Nitro']['CDNRackspace']['CSSHttpUrl'])) {
+								$nitro_href = substr($nitro_value['href'], 0, 1) == '/' ? substr($nitro_value['href'], 1) : $nitro_value['href'];
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNRackspace']['CSSHttpUrl'], strlen($nitroPersistence['Nitro']['CDNRackspace']['CSSHttpUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNRackspace']['CSSHttpUrl'] : $nitroPersistence['Nitro']['CDNRackspace']['CSSHttpUrl'] . '/';
+								
+								$this->data['styles'][$nitro_index]['href'] = $nitro_url . $nitro_href;
+							}
+						}
+					
+					}
+				
+				}
+				
+			]]></add>
+		</operation>
+		<operation info="Overriding the output Javascript URL" error="log">
+			<search position="after"><![CDATA[$this->data['scripts'] = $this->document->getScripts();]]></search>
+			<add><![CDATA[
+			
+				$nitro_has_js_minification = (!empty($nitroPersistence['Nitro']['Mini']['Enabled']) && $nitroPersistence['Nitro']['Mini']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['Mini']['JS']) && $nitroPersistence['Nitro']['Mini']['JS'] == 'yes');
+				
+				$nitro_js_minify_condition = ($nitro_has_js_minification && $nitro_has_ftp_to_cdn) || !$nitro_has_js_minification;
+				$nitro_rackspace_condition = !empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNRackspace']['Enabled']) && $nitroPersistence['Nitro']['CDNRackspace']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNRackspace']['ServeJavaScript']) && $nitroPersistence['Nitro']['CDNRackspace']['ServeJavaScript'] == 'yes';
+				
+				if (($nitro_js_minify_condition || $nitro_amazon_condition || $nitro_rackspace_condition) && !(function_exists('areWeInIgnoredUrl') && areWeInIgnoredUrl())) {
+					foreach ($this->data['scripts'] as $nitro_index => $nitro_value) {
+					
+						$nitro_relative = stripos($nitro_value, 'http://') === 0 ? false : (stripos($nitro_value, 'https://') === 0 ? false : true);
+						
+						if ($nitro_js_minify_condition && $nitro_relative && !empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNStandard']['Enabled']) && $nitroPersistence['Nitro']['CDNStandard']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['CDNStandard']['ServeJavaScript']) && $nitroPersistence['Nitro']['CDNStandard']['ServeJavaScript'] == 'yes') {
+						
+							$nitro_has_ftp_persistence = false;
+							if ($nitro_has_ftp_to_cdn) {
+								$nitro_check_ftp_value = substr($nitro_value, 0, 1) == '/' ? substr($nitro_value, 1) : $nitro_value;
+								$nitro_has_ftp_persistence = in_array($nitro_check_ftp_value, $nitro_ftp_persistence);
+							} else {
+								$nitro_has_ftp_persistence = true;
+							}
+						
+							if ($nitro_has_ftp_persistence && !empty($nitroPersistence['Nitro']['CDNStandard']['JavaScriptHttpsUrl']) && isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+								$nitro_href = substr($nitro_value, 0, 1) == '/' ? substr($nitro_value, 1) : $nitro_value;
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNStandard']['JavaScriptHttpsUrl'], strlen($nitroPersistence['Nitro']['CDNStandard']['JavaScriptHttpsUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNStandard']['JavaScriptHttpsUrl'] : $nitroPersistence['Nitro']['CDNStandard']['JavaScriptHttpsUrl'] . '/';
+								
+								$this->data['scripts'][$nitro_index] = $nitro_url . $nitro_href;
+							} else if ($nitro_has_ftp_persistence && !empty($nitroPersistence['Nitro']['CDNStandard']['JavaScriptHttpUrl'])) {
+								$nitro_href = substr($nitro_value, 0, 1) == '/' ? substr($nitro_value, 1) : $nitro_value;
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNStandard']['JavaScriptHttpUrl'], strlen($nitroPersistence['Nitro']['CDNStandard']['JavaScriptHttpUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNStandard']['JavaScriptHttpUrl'] : $nitroPersistence['Nitro']['CDNStandard']['JavaScriptHttpUrl'] . '/';
+								
+								$this->data['scripts'][$nitro_index] = $nitro_url . $nitro_href;
+							}
+						} else if ($nitro_amazon_condition && $nitro_relative) {
+							
+							$nitro_check_amazon_value = substr($nitro_value, 0, 1) == '/' ? substr($nitro_value, 1) : $nitro_value;
+							$nitro_has_amazon_persistence = in_array($nitro_check_amazon_value, $nitro_amazon_persistence);
+						
+							if ($nitro_has_amazon_persistence && !empty($nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl']) && isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+								$nitro_href = substr($nitro_value, 0, 1) == '/' ? substr($nitro_value, 1) : $nitro_value;
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl'], strlen($nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl'] : $nitroPersistence['Nitro']['CDNAmazon']['HttpsUrl'] . '/';
+								
+								$this->data['scripts'][$nitro_index] = $nitro_url . $nitro_href;
+							} else if ($nitro_has_amazon_persistence && !empty($nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'])) {
+								$nitro_href = substr($nitro_value, 0, 1) == '/' ? substr($nitro_value, 1) : $nitro_value;
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'], strlen($nitroPersistence['Nitro']['CDNAmazon']['HttpUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'] : $nitroPersistence['Nitro']['CDNAmazon']['HttpUrl'] . '/';
+								
+								$this->data['scripts'][$nitro_index] = $nitro_url . $nitro_href;
+							}
+						} else if ($nitro_rackspace_condition && $nitro_relative) {
+							
+							$nitro_check_rackspace_value = substr($nitro_value, 0, 1) == '/' ? substr($nitro_value, 1) : $nitro_value;
+							$nitro_has_rackspace_persistence = in_array($nitro_check_rackspace_value, $nitro_rackspace_persistence);
+						
+							if ($nitro_has_rackspace_persistence && !empty($nitroPersistence['Nitro']['CDNRackspace']['JavaScriptHttpsUrl']) && isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+								$nitro_href = substr($nitro_value, 0, 1) == '/' ? substr($nitro_value, 1) : $nitro_value;
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNRackspace']['JavaScriptHttpsUrl'], strlen($nitroPersistence['Nitro']['CDNRackspace']['JavaScriptHttpsUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNRackspace']['JavaScriptHttpsUrl'] : $nitroPersistence['Nitro']['CDNRackspace']['JavaScriptHttpsUrl'] . '/';
+								
+								$this->data['scripts'][$nitro_index] = $nitro_url . $nitro_href;
+							} else if ($nitro_has_rackspace_persistence && !empty($nitroPersistence['Nitro']['CDNRackspace']['JavaScriptHttpUrl'])) {
+								$nitro_href = substr($nitro_value, 0, 1) == '/' ? substr($nitro_value, 1) : $nitro_value;
+								$nitro_url = substr($nitroPersistence['Nitro']['CDNRackspace']['JavaScriptHttpUrl'], strlen($nitroPersistence['Nitro']['CDNRackspace']['JavaScriptHttpUrl']) - 1, 1) == '/' ? $nitroPersistence['Nitro']['CDNRackspace']['JavaScriptHttpUrl'] : $nitroPersistence['Nitro']['CDNRackspace']['JavaScriptHttpUrl'] . '/';
+								
+								$this->data['scripts'][$nitro_index] = $nitro_url . $nitro_href;
+							}
+						}
+					
+					}
+				}
+				
+			]]></add>
+		</operation>
+	</file>
+</modification>

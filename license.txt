@@ -1,0 +1,99 @@
+ЛИЦЕНЗИЯ
+
+Все права на модуль принадлежат разработчикам http://opencartadmin.com
+
+Условия использования лицензии: один домен - одна лицензия (покупка продукта для каждого домена).
+Условия использования лицензии - "на владельца".
+
+Это означает, что вы можете использовать одну лицензию (один модуль) на один домен.
+Т.е. для каждого домена на который вы устанавливаете модуль, надо покупать лицензию (модуль)
+
+Если вы будите устанавливать модуль на два магазина (два домена) надо покупать две лицензии
+(модуль в количестве двух экземпляров (на два и более существуют скидки на opencartadmin.com))
+
+Если у вас на разных поддоменах стоят модули отдельно - на каждый надо приобретать лицензи (в случае с мультимагазином - приобретать не надо)
+Т.е. на одном поддомене один сайт, а на другом - другой отдельный сайт, в этом случае надо две лицензии. Фактически один отдельный сайт - одна лицензия.
+
+Вы можете приобрести расширенную лицензию, дающую право ставить на неограниченное количество доменов модуль как себе так и клиентам
+(если вы разрабатываете сайты на заказ) а также получать бесплатную тех. поддержку.
+Приобрести вы можете здесь: http://opencartadmin.com/files/extended-license-5.html
+
+Запрещена перепродажа модуля без согласия автора.
+Запрещена передача данного ПО третьим лицам, распространение от своего имени без получения разрешения автора модуля.
+Запрещается публикация, распространение модуля без согласия автора в любых целях, будь то ознакомительных или любых других.
+
+Бесплатная техническая поддержка не действует: для пользователей которые лично не покупали модуль.
+В таком случае за автором продукта закрепляется право отказать в бесплатной технической поддержке этим пользователям,
+а также не отвечать им по каким либо средствам коммуникации без объяснения на то причины.
+
+Бесплатная техническая поддержка не действует: для пользователей которые купили, получили каким либо образом, скопировали,
+скачали, приобрели в складчину этот продукт вне ресурса opencartadmin.com, opencartforum.ru и liveopencart.ru.
+В таком случае за автором продукта закрепляется право отказать в бесплатной технической поддержке этим пользователям,
+а также не отвечать им по каким либо средствам коммуникации без объяснения на то причины.
+При этом вы обязаны удалить модули и прекратить его использование
+
+Бесплатная техническая поддержка принимает платный характер в таких случаях: заявленная работа модуля невозможна
+по причине работы действующий программных продуктов на стороне покупателя которые вызывают конфликты в работе как этого продукта
+так и сайта покупателя в целом, шаблон покупателя значительно отличается от базового шаблона default системы ocStore / OpenCart,
+работа модуля нарушена после действий покупателя, которые случились при редактировании файлов продукта, покупатель
+выражает запрос на улучшение или доработку этого продукта. Покупатель хочет реализовать индивидуальный заказной функционал
+(которого нет в документации или на сайте демо) или индивидуальные шаблоны для модуля
+
+Товар надлежащего качества возврату или обмену не подлежит.
+Выполняя действие покупки и использования продукта вы автоматические соглашаетесь с всеми пунктами этого соглашения.
+
+Для проверки лицензии автору модуля предоставляется версия модуля, e-mail на который зарегистрирован магазин, домен, язык интернет-магазина
+Купив модуль вы автоматически соглашаетесь с текстом лицензии.
+Модуль имеет принцип распространения "as is".
+
+
+**************************************************************************************************************************************
+
+LICENSE
+
+All rights belong to the module developers http://opencartadmin.com
+
+Terms and conditions of license: a single domain - one license (buy product for each domain).
+Terms and conditions of the license - "the owner"
+
+This means that you can use one license (one module) to a single domain.
+Ie for each domain to which you are installing the module, you must purchase a license (module)
+
+If you'll install the module on two stores (two domains) have to buy two licenses
+(Module in duplicate (two or more discounts are available opencartadmin.com))
+
+If you have different subdomains are separate modules - each license must be purchased (in the case of multimagazinom - purchase not necessary)
+Ie one on one subdomain site and on the other - other single site, in this case, you have two licenses. In fact, a separate site - one license.
+
+You can purchase an extended license, which gives the right to put on unlimited domains module itself as well as to customers
+(If you are designing a website to order) as well as those eligible for free. support.
+You can buy here: http://opencartadmin.com/files/extended-license-5.html
+
+Prohibited reselling module without the consent of the author.
+Prohibited the transfer of the software to third parties, the spread on its own behalf without the permission of the author of the module.
+The publication, distribution module without the author's consent for any purpose, whether informational or any other.
+
+Free technical support is not valid: for users who have not personally bought the module.
+In this case, the author of the product establishes the right to refuse free technical support to these users,
+and do not answer them for some means of communication without any explanation on the reason.
+
+Free technical support is not valid: Customers who bought, received in any way, copied,
+downloaded, purchased a purse this product outside the resource opencartadmin.com, opencartforum.ru and liveopencart.ru.
+In this case, the author of the product establishes the right to refuse free technical support to these users,
+and do not answer them for some means of communication without any explanation on the reason.
+In this case, you must remove the modules and stop using it
+
+Free technical support takes the paid character in such cases: the alleged operation of the module can not be
+because of the work the software product on the buyer's side that cause conflicts in how this product
+and the site in general, the buyer, the buyer's pattern is significantly different from the base template default system ocStore / OpenCart,
+Work module is broken after the buyer acts that occurred when editing files of the product, the buyer
+expresses a request for the improvement or modification of the product. The buyer wants to implement individual customized functionality
+(Which is not in the documentation or online demo) or individual templates for module
+
+Good quality goods returned or exchanged can not be.
+Follow the steps to purchase and use the product, you automatically agree with all the points of the agreement.
+
+To check the license granted to the author of the module version of the module, e-mail that is registered on the store, domain, language online store
+By purchasing a unit, you automatically agree with the text of the license.
+
+The module has a principle of distribution "as is".

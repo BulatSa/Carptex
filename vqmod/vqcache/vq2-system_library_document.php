@@ -1,0 +1,533 @@
+<?php
+class Document {
+	private $title;
+	private $description;
+	private $keywords;	
+	private $links = array();		
+	private $styles = array();
+	private $scripts = array();
+	private $og_image;
+
+
+			private function isIgnoredUrl($url, $ignored_urls) {
+				foreach($ignored_urls as $ignoredUrl) {
+					if (strpos($url, $ignoredUrl) !== false) {
+						return true;
+					}
+				}
+				
+				return false;
+			}
+			
+	public function setTitle($title) {
+		$this->title = $title;
+	}
+	
+	public function getTitle() {
+		return $this->title;
+	}
+	
+	public function setDescription($description) {
+		$this->description = $description;
+	}
+	
+	public function getDescription() {
+		return $this->description;
+	}
+	
+	public function setKeywords($keywords) {
+		$this->keywords = $keywords;
+	}
+	
+	public function getKeywords() {
+		return $this->keywords;
+	}
+	
+	public function addLink($href, $rel) {
+		$this->links[md5($href)] = array(
+			'href' => $href,
+			'rel'  => $rel
+		);			
+	}
+	
+	public function getLinks() {
+		return $this->links;
+	}	
+	
+	public function addStyle($href, $rel = 'stylesheet', $media = 'screen') {
+		$this->styles[md5($href)] = array(
+			'href'  => $href,
+			'rel'   => $rel,
+			'media' => $media
+		);
+	}
+	
+	public function getStyles() {
+		
+			if (defined('HTTP_CATALOG')) return $this->styles;
+
+			global $registry;
+			$combinedStyles = array();
+			$result = array();
+			$oc_root = dirname(DIR_APPLICATION);
+			$cache = NULL;
+			$cachefile = NULL;
+			$recache = false;
+			$filename = NULL;
+			$megaHashes = array();
+			
+			if (!defined('DS')) {
+				define('DS', DIRECTORY_SEPARATOR);
+			}
+			
+			//load NitroCache
+			require_once $oc_root.DS.'system'.DS.'nitro'.DS.'config.php';
+			require_once $oc_root.DS.'system'.DS.'nitro'.DS.'core'.DS.'core.php';
+			
+			$nitroSettings = getNitroPersistence();
+
+			if (empty($nitroSettings['Nitro']['Enabled']) || $nitroSettings['Nitro']['Enabled'] != 'yes' || empty($nitroSettings['Nitro']['Mini']['Enabled']) || empty($nitroSettings['Nitro']['Mini']['CSS']) || $nitroSettings['Nitro']['Mini']['Enabled'] != 'yes' || $nitroSettings['Nitro']['Mini']['CSS'] != 'yes' || (function_exists('areWeInIgnoredUrl') && areWeInIgnoredUrl())) {
+				return $this->styles;
+			}
+			
+			if (!file_exists($oc_root.DS.'assets')) {
+				mkdir($oc_root.DS.'assets');
+			}
+			
+			if (!file_exists($oc_root.DS.'assets'.DS.'style')) {
+				mkdir($oc_root.DS.'assets'.DS.'style');
+			}
+			
+			$cssExclude = array();
+			$excludedCSS = array();
+			$includedCSS = 0;
+			
+			if (!empty($nitroSettings['Nitro']['Mini']['CSSExclude'])) {
+				$cssExclude = explode("\n", $nitroSettings['Nitro']['Mini']['CSSExclude']);
+				foreach ($cssExclude as $k=>$stylename) {
+					$cssExclude[$k] = trim($stylename, "\n\r ");
+				}
+			}
+			
+			//extract local fylesystem path
+			foreach($this->styles as $hash=>$style) {
+				$url_info = parse_url($style['href']);
+				if (!empty($url_info['path'])) {
+					$f = trim($url_info['path'], '/');
+					if (file_exists($oc_root.DS.$f)) {
+						$this->styles[$hash]['href'] = $f;
+					} else {
+						if (empty($nitroSettings['Nitro']['Mini']['CSSExclude'])) {
+							$nitroSettings['Nitro']['Mini']['CSSExclude'] = '';
+						}
+						
+						$cssExclude[] = basename($style['href']);
+					}
+				} else {
+					if (empty($nitroSettings['Nitro']['Mini']['CSSExclude'])) {
+						$nitroSettings['Nitro']['Mini']['CSSExclude'] = '';
+					}
+					
+					$cssExclude[] = basename($style['href']);
+				}
+			}
+			
+			
+			if (!empty($nitroSettings['Nitro']['Mini']['CSSCombine']) && $nitroSettings['Nitro']['Mini']['CSSCombine'] == 'yes') {
+				
+				$cachefile = $oc_root.DS.'assets'.DS.'style'.DS.getSSLCachePrefix().'styles-combined.cache';
+				
+				if (!file_exists($cachefile)) {
+					touch($cachefile);
+					file_put_contents($cachefile, json_encode(array()));
+				}
+				
+				$cache = json_decode(file_get_contents($cachefile), true);
+				
+				//build combination hash
+				foreach ($this->styles as $hash=>$style) {
+					if (!in_array(basename($style['href']), $cssExclude)) {
+						if (empty($megaHashes[$style['rel'].$style['media']])) {
+							$megaHashes[$style['rel'].$style['media']] = '';
+						}
+						
+						$megaHashes[$style['rel'].$style['media']] .= $hash;
+						$includedCSS++;
+					} else {
+						$excludedCSS[$hash] = $style;
+					}
+				}
+				
+				foreach ($megaHashes as $k=>$megaHash) {
+					$megaHashes[$k] = md5($megaHash);
+				}
+				
+				// Check the cache if we should recache
+				foreach ($this->styles as $hash=>$style) {
+					if (empty($style)) continue;
+				
+					if (!in_array(basename($style['href']), $cssExclude)) {
+						$filename = $oc_root.DS.trim(str_replace('/', DS, $style['href']), DS); //convert relative url to absolute filesystem specific path (all of this, because of Windows)
+						
+						$comboKey = $megaHashes[$style['rel'].$style['media']];
+						
+						if (empty($cache[$comboKey]) || !is_array($cache[$comboKey])) {
+							$cache[$comboKey] = array();
+						}
+						
+						if (array_key_exists($filename, $cache[$comboKey])) {
+							if ($cache[$comboKey][$filename] != filemtime($filename)) {
+								$recache = true;
+								break;
+							}
+						} else {
+							$recache = true;
+							break;
+						}
+					}
+				}
+				//end of check
+				
+				if (isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTPS'] == '1'))) {
+					$webshopUrl = $registry->get('config')->get('config_ssl');
+				} else {
+					$webshopUrl = $registry->get('config')->get('config_url');
+				}
+				$webshopUrl = rtrim(preg_replace('~^https?\:~i', '', $webshopUrl), '/');
+				
+				include_once $oc_root.DS.'system'.DS.'nitro'.DS.'lib'.DS.'minifier'.DS.'CSSMin.php';
+				
+				foreach ($this->styles as $hash=>$style) {
+					if (empty($style)) continue;
+					
+					if (!in_array(basename($style['href']), $cssExclude)) {
+						
+						$target = '/assets/style/'.getSSLCachePrefix().'nitro-combined-' . $megaHashes[$style['rel'].$style['media']] . '.css';
+						$targetAbsolutePath = $oc_root.DS.trim(str_replace('/', DS, $target), DS);
+						
+						$filename = $oc_root.DS.trim(str_replace('/', DS, $style['href']), DS);
+						$comboHash = $megaHashes[$style['rel'].$style['media']];
+						
+						if (empty($combinedStyles[$style['rel'].$style['media']])) {
+							$combinedStyles[$style['rel'].$style['media']] = array('rel' => $style['rel'], 'media' => $style['media'], 'content' => '', 'megaHash' => $comboHash);
+						}
+							
+						if ($recache || !file_exists($targetAbsolutePath)) {
+							
+							if (empty($counters[$style['rel'].$style['media']])) {
+								$counters[$style['rel'].$style['media']] = 0;
+							}
+							
+							$urlToCurrentDir = $webshopUrl.dirname('/'.trim($style['href'], '/'));
+							
+							/* replace relative urls with absolute ones */
+							$tmpContent = preg_replace('/(url\()(?![\'\"]?https?\:\/\/)([\'\"]?)\/?/', '$1$2'.$urlToCurrentDir.'/', file_get_contents($filename));
+							
+							//minify
+							$tmpContent = Minify_CSS_Compressor::process($tmpContent);
+							
+							
+							$combinedStyles[$style['rel'].$style['media']]['content'] .= $tmpContent;
+							unset($tmpContent);
+							
+							$cache[$comboHash][$filename] = filemtime($filename);
+						}
+					}
+				}
+				
+				file_put_contents($cachefile, json_encode($cache));
+				
+				foreach ($combinedStyles as $key=>$value) {
+					$target = '/assets/style/'.getSSLCachePrefix().'nitro-combined-' . $megaHashes[$key] . '.css';
+					$targetAbsolutePath = $oc_root.DS.trim(str_replace('/', DS, $target), DS);
+					
+					if ($recache || !file_exists($targetAbsolutePath)) {
+						file_put_contents($targetAbsolutePath, $value['content']);
+					}
+					
+					$result[$megaHashes[$key]] = array('rel' => $value['rel'], 'media' => $value['media'], 'href' => trim($target, '/'));
+				}
+				
+				if ($includedCSS > 0) {
+					return array_merge($excludedCSS, $result);
+				} else {
+					return $excludedCSS;
+				}
+			} else {
+				
+				$cachefile = $oc_root.DS.'assets'.DS.'style'.DS.getSSLCachePrefix().'styles.cache';
+				
+				if (!file_exists($cachefile)) {
+					touch($cachefile);
+					file_put_contents($cachefile, json_encode(array()));
+				}
+				
+				$cache = json_decode(file_get_contents($cachefile), true);
+				
+				if (isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTPS'] == '1'))) {
+					$webshopUrl = $registry->get('config')->get('config_ssl');
+				} else {
+					$webshopUrl = $registry->get('config')->get('config_url');
+				}
+				$webshopUrl = rtrim(preg_replace('~^https?\:~i', '', $webshopUrl), '/');
+				
+				include_once $oc_root.DS.'system'.DS.'nitro'.DS.'lib'.DS.'minifier'.DS.'CSSMin.php';
+				
+				foreach ($this->styles as $hash=>$style) {
+					if (empty($style)) continue;
+					$recache = false;
+				
+					if (!in_array(trim(basename($style['href']), "\r\n"), $cssExclude)) {
+						$filename = $oc_root.DS.trim(str_replace('/', DS, $style['href']), DS);
+						
+						$basefilename = basename($style['href'], '.css');
+						$target = '/assets/style/'.getSSLCachePrefix().'nitro-mini-' . $basefilename . '.css';
+						$targetAbsolutePath = $oc_root.DS.trim(str_replace('/', DS, $target), DS);
+						
+						if (array_key_exists($filename, $cache)) {
+							if ($cache[$filename] != filemtime($filename)) {
+								$recache = true;
+							}
+						} else {
+							$recache = true;
+						}
+						
+						if ($recache || !file_exists($targetAbsolutePath)) {
+							$urlToCurrentDir = $webshopUrl.dirname('/'.trim($style['href'], '/'));
+							
+							/* replace relative urls with absolute ones */
+							$tmpContent = preg_replace('/(url\()(?![\'\"]?https?\:\/\/)([\'\"]?)\/?/', '$1$2'.$urlToCurrentDir.'/', file_get_contents($filename));
+							
+							//minify
+							$tmpContent = Minify_CSS_Compressor::process($tmpContent);
+							
+							file_put_contents($targetAbsolutePath, $tmpContent);
+							
+							unset($tmpContent);
+							
+							$cache[$filename] = filemtime($filename);
+						}
+						
+						$this->styles[$hash]['href'] = trim($target, '/');
+					}
+				}
+				
+				file_put_contents($cachefile, json_encode($cache));
+			
+				return $this->styles;
+			}
+			
+	}	
+	
+	public function addScript($script) {
+		$this->scripts[md5($script)] = $script;			
+	}
+	
+	public function getScripts() {
+		
+			if (defined('HTTP_CATALOG')) return $this->scripts;
+			
+			$oc_root = dirname(DIR_APPLICATION);
+			$cache = NULL;
+			$cachefile = NULL;
+			$filename = NULL;
+			
+			if (!defined('DS')) {
+				define('DS', DIRECTORY_SEPARATOR);
+			}
+			
+			//load NitroCache
+			require_once $oc_root.DS.'system'.DS.'nitro'.DS.'config.php';
+			require_once $oc_root.DS.'system'.DS.'nitro'.DS.'core'.DS.'core.php';
+			
+			$nitroSettings = getNitroPersistence();
+			
+			if (empty($nitroSettings['Nitro']['Enabled']) || $nitroSettings['Nitro']['Enabled'] != 'yes' || empty($nitroSettings['Nitro']['Mini']['Enabled']) || empty($nitroSettings['Nitro']['Mini']['JS']) || $nitroSettings['Nitro']['Mini']['Enabled'] != 'yes' || $nitroSettings['Nitro']['Mini']['JS'] != 'yes' || (function_exists('areWeInIgnoredUrl') && areWeInIgnoredUrl())) {
+				return $this->scripts;
+			}
+			
+			if (!file_exists($oc_root.DS.'assets')) {
+				mkdir($oc_root.DS.'assets');
+			}
+			
+			if (!file_exists($oc_root.DS.'assets'.DS.'script')) {
+				mkdir($oc_root.DS.'assets'.DS.'script');
+			}
+			
+			$jsExclude = array();
+			
+			if (!empty($nitroSettings['Nitro']['Mini']['JSExclude'])) {
+				$jsExclude = explode("\n", $nitroSettings['Nitro']['Mini']['JSExclude']);
+				foreach ($jsExclude as $k=>$scriptname) {
+					$jsExclude[$k] = trim($scriptname, "\n\r ");
+				}
+			}
+			
+			//extract local fylesystem path
+			foreach($this->scripts as $hash=>$script) {
+				$url_info = parse_url($script);
+				if (!empty($url_info['path'])) {
+					$f = trim($url_info['path'], '/');
+					if (file_exists($oc_root.DS.$f)) {
+						$this->scripts[$hash] = $f;
+					} else {
+						if (empty($nitroSettings['Nitro']['Mini']['JSExclude'])) {
+							$nitroSettings['Nitro']['Mini']['JSExclude'] = '';
+						}
+						
+						$jsExclude[] = basename($style['href']);
+					}
+				} else {
+					if (empty($nitroSettings['Nitro']['Mini']['JSExclude'])) {
+						$nitroSettings['Nitro']['Mini']['JSExclude'] = '';
+					}
+					
+					$jsExclude[] = basename($style['href']);
+				}
+			}
+
+			if (!empty($nitroSettings['Nitro']['Mini']['JSCombine']) && $nitroSettings['Nitro']['Mini']['JSCombine'] == 'yes') {
+				$cachefile = $oc_root.DS.'assets'.DS.'script'.DS.getSSLCachePrefix().'scripts-combined.cache';
+				
+				if (!file_exists($cachefile)) {
+					touch($cachefile);
+					file_put_contents($cachefile, json_encode(array()));
+				}
+				
+				$cache = json_decode(file_get_contents($cachefile), true);
+				
+				$comboHash = '';
+				$excludedScripts = array();
+				$includedScripts = 0;
+				
+				foreach ($this->scripts as $hash=>$script) {
+					if (!in_array(trim(basename($script), "\r\n"), $jsExclude)) {
+						$comboHash .= $hash;
+						$includedScripts++;
+					} else {
+						$excludedScripts[$hash] = $script;
+					}
+				}
+				
+				$comboHash = md5($comboHash);
+				$target = '/assets/script/'.getSSLCachePrefix().'nitro-combined-' . $comboHash . '.js';
+				$targetAbsolutePath = $oc_root.DS.trim(str_replace('/', DS, $target), DS);
+				
+				$recache = false;
+				
+				foreach ($this->scripts as $hash=>$script) {
+					if (!in_array(trim(basename($script), "\r\n"), $jsExclude)) {
+						$filename = $oc_root.DS.trim(str_replace('/', DS, $script), DS);
+						
+						if (!empty($cache[$comboHash][$filename])) {
+							if ($cache[$comboHash][$filename] != filemtime($filename)) {
+								$recache = true;
+								break;
+							}
+						} else {
+							$recache = true;
+							break;
+						}
+					}
+				}
+				
+				$minifiedCombined = '';
+				
+				if ($recache || !file_exists($targetAbsolutePath)) {
+					include_once $oc_root.DS.'system'.DS.'nitro'.DS.'lib'.DS.'minifier'.DS.'JSMin.php';
+
+					$counter = 0;
+					
+					foreach ($this->scripts as $hash=>$script) {
+						if (!in_array(trim(basename($script), "\r\n"), $jsExclude)) {
+							$filename = $oc_root.DS.trim(str_replace('/', DS, $script), DS);
+							
+							$scriptSrc = file_get_contents($filename);
+							
+							//minify
+							$scriptSrc = JSMin::minify($scriptSrc);
+							
+							if (substr($scriptSrc, -1) == ')') {
+								$scriptSrc .= ';';
+							}
+							
+							$minifiedCombined .= (($counter > 0) ? PHP_EOL : '') . $scriptSrc;
+							
+							unset($scriptSrc);
+							
+							$cache[$comboHash][$filename] = filemtime($filename);
+							$counter++;
+						}
+					}
+					
+					file_put_contents($targetAbsolutePath, $minifiedCombined);
+				}
+				
+				file_put_contents($cachefile, json_encode($cache));
+				
+				if ($includedScripts > 0) {
+					return array_merge($excludedScripts, array(md5($target) => trim($target, '/')));
+				} else {
+					return $excludedScripts;
+				}
+			} else {
+				$cachefile = $oc_root.DS.'assets'.DS.'script'.DS.getSSLCachePrefix().'scripts.cache';
+				
+				if (!file_exists($cachefile)) {
+					touch($cachefile);
+					file_put_contents($cachefile, json_encode(array()));
+				}
+				
+				$cache = json_decode(file_get_contents($cachefile), true);
+				
+				include_once $oc_root.DS.'system'.DS.'nitro'.DS.'lib'.DS.'minifier'.DS.'JSMin.php';
+				
+				foreach ($this->scripts as $hash=>$script) {
+					$recache = false;
+					
+					if (!in_array(trim(basename($script), "\r\n"), $jsExclude)) {
+						$filename = $oc_root.DS.trim(str_replace('/', DS, $script), DS);
+						$basefilename = basename($script, '.js');
+						$target = '/assets/script/'.getSSLCachePrefix().'nitro-mini-' . $basefilename . '.js';
+						$targetAbsolutePath = $oc_root.DS.trim(str_replace('/', DS, $target), DS);
+						
+						if (!empty($cache[$filename])) {
+							if ($cache[$filename] != filemtime($filename)) {
+								$recache = true;
+							}
+						} else {
+							$recache = true;
+						}
+						
+						if ($recache || !file_exists($targetAbsolutePath)) {
+							touch($targetAbsolutePath);
+							$scriptSrc = file_get_contents($filename);
+							
+							//minify
+							$scriptSrc = JSMin::minify($scriptSrc);
+							
+							file_put_contents($targetAbsolutePath, $scriptSrc);
+							
+							$cache[$filename] = filemtime($filename);
+						}
+						
+						$this->scripts[$hash] = trim($target, '/');
+					}
+				}
+				
+				file_put_contents($cachefile, json_encode($cache));
+				
+				return $this->scripts;
+			}
+			
+	}
+
+	public function setOgImage($image) {
+		$this->og_image = $image;
+}
+
+	public function getOgImage() {
+		return $this->og_image;
+	}
+}
+?>

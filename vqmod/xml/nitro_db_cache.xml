@@ -1,0 +1,68 @@
+<modification>
+	<id>Nitro Database Cache for OpenCart</id>
+	<version>1.5.5.x</version>
+	<vqmver>1.0</vqmver>
+	<author>iSenseLabs.com</author>
+	<file name="system/library/db.php">
+		<operation info="Reading the cached results of the database calls, according to the settings in the admin panel." error="log">
+			<search position="before"><![CDATA[return $this->driver->query($sql);]]></search>
+			<add><![CDATA[
+				require_once(DIR_SYSTEM.'nitro/config.php');
+				require_once(DIR_SYSTEM.'nitro/core/core.php');
+				$nitroPersistence = getNitroPersistence();
+				if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['DBCache']['Enabled']) && $nitroPersistence['Nitro']['DBCache']['Enabled'] == 'yes') {
+					$nitro_matches = array();
+					$nitro_match = false;
+					
+					// Product COUNT Queries
+					if (!empty($nitroPersistence['Nitro']['DBCache']['ProductCountQueries']) && $nitroPersistence['Nitro']['DBCache']['ProductCountQueries'] == 'yes') $nitro_match = preg_match('~SELECT.*COUNT\(.*FROM.*[^0-9a-zA-Z_]' . DB_PREFIX . '(product)([\s]|$)~i', $sql, $nitro_matches);
+					
+					// Category COUNT Queries
+					if (!$nitro_match && !empty($nitroPersistence['Nitro']['DBCache']['CategoryCountQueries']) && $nitroPersistence['Nitro']['DBCache']['CategoryCountQueries'] == 'yes') $nitro_match = preg_match('~SELECT.*COUNT\(.*FROM.*[^0-9a-zA-Z_]' . DB_PREFIX . '(category)([\s]|$)~i', $sql, $nitro_matches);
+					
+					// Category Queries
+					if (!$nitro_match && !empty($nitroPersistence['Nitro']['DBCache']['CategoryQueries']) && $nitroPersistence['Nitro']['DBCache']['CategoryQueries'] == 'yes') $nitro_match = preg_match('~SELECT.*FROM.*[^0-9a-zA-Z_]' . DB_PREFIX . '(category)([\s]|$)~i', $sql, $nitro_matches);
+					
+					// SEO URLs Queries
+					if (!$nitro_match && !empty($nitroPersistence['Nitro']['DBCache']['SeoUrls']) && $nitroPersistence['Nitro']['DBCache']['SeoUrls'] == 'yes') $nitro_match = preg_match('~SELECT.*FROM.*[^0-9a-zA-Z_]' . DB_PREFIX . '(url_alias)([\s]|$)~i', $sql, $nitro_matches);
+					
+					// Search Queries
+					if (!$nitro_match && !empty($nitroPersistence['Nitro']['DBCache']['Search']) && $nitroPersistence['Nitro']['DBCache']['Search'] == 'yes') {
+						$nitro_match = preg_match('~SELECT.*WHERE.*(LIKE|MATCH)~i', $sql, $nitro_matches);
+						if ($nitro_match) {
+							$nitro_match = false;
+							if (!empty($nitroPersistence['Nitro']['DBCache']['SearchKeywords'])) {
+								$nitro_keywords = explode(",", $nitroPersistence['Nitro']['DBCache']['SearchKeywords']);
+								foreach ($nitro_keywords as $nitro_keyword) {
+									if (stripos(trim($nitro_keyword), $sql) !== FALSE) {
+										$nitro_match = true;
+										break;
+									}
+								}
+							}
+						}
+					}
+					
+					if ($nitro_match) {
+						require_once(DIR_SYSTEM . 'nitro/core/dbcache.php');
+						$nitro_cache_selector = strtolower($nitro_matches[1]) . '.' . md5($sql); // category.6ef5cee93ce985fe9de730a1d837455d
+						$nitro_result = getNitroDBCache($nitro_cache_selector);
+						if ($nitro_result !== FALSE) return $nitro_result;
+					}
+				}
+			]]></add>
+		</operation>
+		<operation info="Caching the results of the database calls, according to the settings in the admin panel." error="log">
+			<search position="before"><![CDATA[return $this->driver->query($sql);]]></search>
+			<add><![CDATA[
+				if (!empty($nitro_cache_selector)) {
+					$nitro_db_result = $this->driver->query($sql);
+					
+					setNitroDBCache($nitro_cache_selector, $nitro_db_result);
+					
+					return $nitro_db_result;
+				}
+			]]></add>
+		</operation>
+	</file>
+</modification>

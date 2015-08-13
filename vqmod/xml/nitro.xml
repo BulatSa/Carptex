@@ -1,0 +1,69 @@
+<modification>
+	<id>Nitro for OpenCart</id>
+	<version>1.5.5.x</version>
+	<vqmver>1.0</vqmver>
+	<author>iSenseLabs.com</author>
+	<file name="system/startup.php">
+		<operation>
+			<search position="before"><![CDATA[// Helper]]></search>
+			<add><![CDATA[
+				require_once(DIR_SYSTEM.'nitro/config.php');
+				require_once(DIR_SYSTEM.'nitro/core/core.php');
+				$nitroPersistence = getNitroPersistence();
+				if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes'&& $nitroPersistence['Nitro']['PageCache']['Enabled'] == 'yes') {
+					require_once(DIR_SYSTEM.'nitro/core/top.php');
+				}
+			]]></add>
+		</operation>
+	</file>
+	<file name="system/library/response.php">
+		<operation>
+			<search position="after"><![CDATA[echo $ouput;]]></search>
+			<add><![CDATA[
+				require_once(DIR_SYSTEM.'nitro/config.php');
+				require_once(DIR_SYSTEM.'nitro/core/core.php');
+				$nitroPersistence = getNitroPersistence();
+				if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes'&& $nitroPersistence['Nitro']['PageCache']['Enabled'] == 'yes') {
+					require_once(DIR_SYSTEM.'nitro/core/bottom.php');
+				}
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/controller/catalog/product.php">
+		<operation>
+			<search position="before"><![CDATA[$this->model_catalog_product->editProduct($this->request->get['product_id'], $this->request->post);]]></search>
+			<add><![CDATA[
+				$this->load->model('tool/nitro');
+				$nitroSettings = $this->model_tool_nitro->getPersistence();
+				if ($nitroSettings['Nitro']['PageCache']['ClearCacheOnProductEdit'] == 'yes') {
+					$this->model_tool_nitro->clearPageCache();
+				}
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/view/template/common/header.tpl">
+		<operation>
+			<search position="before"><![CDATA[<li id="help"><a class="top"><?php echo $text_help; ?></a>]]></search>
+			<add><![CDATA[
+      <li id="nitro"><a class="top topnitro">Nitro</a>
+        <ul>
+          <li><a href="index.php?route=tool/nitro&token=<?php echo $_GET['token']; ?>">Settings</a></li>
+          <li><a class="parent">Clear Cache</a>
+		    <ul>
+              <li style="border-bottom:1px dashed #888;"><a href="javascript:void(0)" onclick="document.location='index.php?route=tool/nitro/clearnitrocaches&token=<?php echo $_GET['token']; ?>'">Clear Nitro Cache</a></li>
+              <li><a href="javascript:void(0)" onclick="document.location='index.php?route=tool/nitro/clearpagecache&token=<?php echo $_GET['token']; ?>'">Clear Page Cache</a></li>
+              <li><a href="javascript:void(0)" onclick="document.location='index.php?route=tool/nitro/cleardbcache&token=<?php echo $_GET['token']; ?>'">Clear Database Cache</a></li>
+              <li><a href="javascript:void(0)" onclick="document.location='index.php?route=tool/nitro/clearsystemcache&token=<?php echo $_GET['token']; ?>'">Clear System Cache</a></li>
+              <li><a href="javascript:void(0)" onclick="document.location='index.php?route=tool/nitro/clearimagecache&token=<?php echo $_GET['token']; ?>'">Clear Image Cache</a></li>
+              <li><a href="javascript:void(0)" onclick="document.location='index.php?route=tool/nitro/clearcsscache&token=<?php echo $_GET['token']; ?>'">Clear CSS Cache</a></li>
+              <li><a href="javascript:void(0)" onclick="document.location='index.php?route=tool/nitro/clearjscache&token=<?php echo $_GET['token']; ?>'">Clear JavaScript Cache</a></li>
+			  <li><a href="javascript:void(0)" onclick="document.location='index.php?route=tool/nitro/clearvqmodcache&token=<?php echo $_GET['token']; ?>'">Clear vQmod Cache</a></li>
+              <li style="border-top:1px dashed #888;"><a href="javascript:void(0)" onclick="document.location='index.php?route=tool/nitro/clearallcaches&token=<?php echo $_GET['token']; ?>'">Clear All Caches</a></li>
+            </ul>
+		  </li>
+        </ul>
+      </li>
+			]]></add>
+		</operation>
+	</file>
+</modification>

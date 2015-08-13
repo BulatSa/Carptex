@@ -1,0 +1,1 @@
+{"smushed_images_count":0,"total_images":false,"kb_saved":0,"last_smush_timestamp":0}

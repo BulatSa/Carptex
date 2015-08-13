@@ -1,0 +1,39 @@
+<modification>
+	<id>Nitro System Cache for OpenCart</id>
+	<version>1.5.5.x</version>
+	<vqmver>1.0</vqmver>
+	<author>iSenseLabs.com</author>
+	<file name="system/library/cache.php">
+		<operation info="Overriding the default OpenCart settings" error="log">
+			<search position="after"><![CDATA[public function get]]></search>
+			<add><![CDATA[
+				require_once(DIR_SYSTEM.'nitro/config.php');
+				require_once(DIR_SYSTEM.'nitro/core/core.php');
+				$nitroPersistence = getNitroPersistence();
+				if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && (empty($nitroPersistence['Nitro']['OpenCartCache']['Enabled']) || $nitroPersistence['Nitro']['OpenCartCache']['Enabled'] == 'no')) {
+					return;
+				}
+			]]></add>
+		</operation>
+		<operation info="Overriding the default OpenCart settings" error="log">
+			<search position="after"><![CDATA[$this->delete($key);]]></search>
+			<add><![CDATA[
+				require_once(DIR_SYSTEM.'nitro/config.php');
+				require_once(DIR_SYSTEM.'nitro/core/core.php');
+				$nitroPersistence = getNitroPersistence();
+				
+				if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && (empty($nitroPersistence['Nitro']['OpenCartCache']['Enabled']) || $nitroPersistence['Nitro']['OpenCartCache']['Enabled'] == 'no')) {
+					return;
+				}
+				$nitro_expire = !empty($nitroPersistence['Nitro']['OpenCartCache']['ExpireTime']) ? (int)$nitroPersistence['Nitro']['OpenCartCache']['ExpireTime'] : 0;
+				$this->expire = $nitro_expire;
+			]]></add>
+		</operation>
+		<operation info="Clearing the stat cache" error="log">
+			<search position="after"><![CDATA[unlink]]></search>
+			<add><![CDATA[
+				clearstatcache();
+			]]></add>
+		</operation>
+	</file>
+</modification>

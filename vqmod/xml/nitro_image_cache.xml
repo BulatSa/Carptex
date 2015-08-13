@@ -1,0 +1,80 @@
+<modification>
+	<id>Nitro Image Cache for OpenCart</id>
+	<version>1.5.5.x</version>
+	<vqmver>1.0</vqmver>
+	<author>iSenseLabs.com</author>
+	<file name="system/library/image.php">
+		<operation info="Overriding the JPEG compression" error="log">
+			<search position="after"><![CDATA[public function save]]></search>
+			<add><![CDATA[
+				require_once(DIR_SYSTEM.'nitro/config.php');
+				require_once(DIR_SYSTEM.'nitro/core/core.php');
+				$nitroPersistence = getNitroPersistence();
+				if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['ImageCache']['OverrideCompression']) && $nitroPersistence['Nitro']['ImageCache']['OverrideCompression'] == 'yes') {
+					$nitro_quality = !empty($nitroPersistence['Nitro']['ImageCache']['JPEGCompression']) ? (int)$nitroPersistence['Nitro']['ImageCache']['JPEGCompression'] : $quality;
+					$quality = $nitro_quality < 0 ? 0 : ($nitro_quality > 100 ? 100 : $nitro_quality);
+				}
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/model/tool/image.php">
+		<operation error="log">
+			<search position="before"><![CDATA[if ($width_orig != $width || $height_orig != $height) {]]></search>
+			<add><![CDATA[
+				require_once(DIR_SYSTEM.'nitro/config.php');
+				require_once(DIR_SYSTEM.'nitro/core/core.php');
+				$nitroPersistence = getNitroPersistence();
+				if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['ImageCache']['OverrideCompression']) && $nitroPersistence['Nitro']['ImageCache']['OverrideCompression'] == 'yes') {
+					
+				}
+			]]></add>
+		</operation>
+		
+		<operation error="log">
+			<search position="after"><![CDATA[$image->save(DIR_IMAGE . $new_image);]]></search>
+			<add><![CDATA[
+				if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['PageCache']['Enabled']) && $nitroPersistence['Nitro']['PageCache']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['SmushIt']['OnDemand']) && $nitroPersistence['Nitro']['SmushIt']['OnDemand'] == 'yes' && !(function_exists('areWeInIgnoredUrl') && areWeInIgnoredUrl())) {
+					include_once dirname(DIR_SYSTEM) . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . 'smushit.php';
+					try {
+						$file = new SmushIt(DIR_IMAGE . $new_image, SmushIt::LOCAL_ORIGIN);
+						// And finaly, replace original file by the compressed version
+						// Sometimes, Smush.it convert files. We don't want that to happen.
+						
+						$src = pathinfo($file->source, PATHINFO_EXTENSION);
+						$dst = pathinfo($file->destination, PATHINFO_EXTENSION);
+						if ($src == $dst AND copy($file->destination, DIR_IMAGE . $new_image)) {
+							// Success !
+							//echo 'Smushed File: '.$source.'<br>';
+						}
+					} catch(Exception $e) {
+						set_time_limit(30);
+					}
+				}
+			]]></add>
+		</operation>
+		
+		<operation error="log">
+			<search position="after"><![CDATA[copy(DIR_IMAGE . $old_image, DIR_IMAGE . $new_image);]]></search>
+			<add><![CDATA[
+				if (!empty($nitroPersistence['Nitro']['Enabled']) && $nitroPersistence['Nitro']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['PageCache']['Enabled']) && $nitroPersistence['Nitro']['PageCache']['Enabled'] == 'yes' && !empty($nitroPersistence['Nitro']['SmushIt']['OnDemand']) && $nitroPersistence['Nitro']['SmushIt']['OnDemand'] == 'yes' && !(function_exists('areWeInIgnoredUrl') && areWeInIgnoredUrl())) {
+					include_once dirname(DIR_SYSTEM) . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . 'smushit.php';
+					try {
+						$file = new SmushIt(DIR_IMAGE . $new_image, SmushIt::LOCAL_ORIGIN);
+						// And finaly, replace original file by the compressed version
+						// Sometimes, Smush.it convert files. We don't want that to happen.
+						
+						$src = pathinfo($file->source, PATHINFO_EXTENSION);
+						$dst = pathinfo($file->destination, PATHINFO_EXTENSION);
+						if ($src == $dst AND copy($file->destination, DIR_IMAGE . $new_image)) {
+							// Success !
+							//echo 'Smushed File: '.$source.'<br>';
+						}
+					} catch(Exception $e) {
+						set_time_limit(30);
+					}
+				}
+			]]></add>
+		</operation>
+	</file>
+</modification>

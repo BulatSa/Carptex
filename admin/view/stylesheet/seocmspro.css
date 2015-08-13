@@ -1,0 +1,625 @@
+* {
+     font-family: 'Open Sans', sans-serif;
+}
+
+body, td {font-size: 14px;
+font-family: 'Open Sans', sans-serif;
+line-height: 20px;
+}
+
+#content {
+    background: 0 1px #FFFFFF;
+   /* min-width: 900px;*/
+   /* padding: 10px 30px 200px;*/
+   padding: 0 !important;
+}
+#content .page-header {
+padding: 10px 10px 100px;
+margin-top: 0px !important;
+}
+#content .page-header .container-fluid {
+padding-left: 0px !important;
+padding-right: -10px !important;
+}
+.breadcrumb {
+float: right;
+}
+
+.box > .heading {
+    background: #ACEEAD;
+
+	-webkit-border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-khtml-border-radius:  0px 0px 0px 0px;
+	border-radius:  0px 0px 0px 0px;
+    height: 43px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom:0px;
+}
+
+.box > .heading h1 {
+    color: #222;
+    float: left;
+    font-size: 18px;
+    margin: 0;
+    padding: 11px 0 0;
+}
+
+.box > .content {
+    border: none;
+    min-height: 300px;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.pagination .links b {
+    background: none repeat scroll 0 0 #269BC6;
+    border: 1px solid #269BC6;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+
+.pagination .links a {
+    border: 1px solid #269BC6;
+    color: #269BC6;
+    font-size: 12px;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+
+
+
+a.button, .list a.button {
+	-webkit-border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-khtml-border-radius:  0px 0px 0px 0px;
+	border-radius:  0px 0px 0px 0px;
+}
+
+.list {
+	border-collapse: collapse;
+	width: 100%;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+}
+.list td {
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+.list thead td {
+	background-color: #EFEFEF;
+	padding: 0px 5px;
+}
+.list thead td a, .list thead td {
+	text-decoration: none;
+	color: #222222;
+	font-weight: bold;
+}
+.list tbody td a {
+	text-decoration: underline;
+}
+.list tbody td {
+	vertical-align: middle;
+	padding: 0px 5px;
+	background: #FFFFFF;
+}
+.list .left {
+	text-align: left;
+	padding: 7px;
+}
+.list .right {
+	text-align: right;
+	padding: 7px;
+}
+.list .center {
+	text-align: center;
+	padding: 7px;
+}
+.list .asc {
+	padding-right: 15px;
+	background: url('../image/asc.png') right center no-repeat;
+}
+.list .desc {
+	padding-right: 15px;
+	background: url('../image/desc.png') right center no-repeat;
+}
+.list tr.filter td {
+	padding: 5px;
+	background: #E7EFEF;
+}
+
+div#menu {
+font-size: 12px;
+font-family: 'Arial', sans-serif;
+line-height: 15px;
+}
+
+div#menu > ul li a {
+font-size: 12px;
+font-family: 'Arial', sans-serif;
+line-height: 15px;
+}
+
+input, select, textarea{
+font-size: 15px;
+font-family: 'Open Sans', sans-serif;
+line-height: 20px;
+    border: 1px solid #CCC;
+
+}
+
+select {padding-left: 3px;
+}
+select  option {
+font-size: 15px;
+font-family: 'Open Sans', sans-serif;
+line-height: 20px;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+input, select{
+line-height: 26px;
+/* height: 25px; */
+}
+
+
+
+.scrollbox {
+	border: 1px solid #CCCCCC;
+	width: 350px;
+	height: 200px;
+	background: #FFFFFF;
+	overflow-y: scroll;
+	 font-size: 15px;
+line-height: 15px;
+
+}
+ .scrollbox input{
+ font-size: 15px;
+line-height: 16px;
+height: 16px;
+}
+
+.scrollbox img {
+	float: right;
+	cursor: pointer;
+}
+
+.scrollbox div {
+	padding: 3px;
+}
+.scrollbox div input {
+	margin: 0px;
+	padding: 0px;
+	margin-right: 3px;
+}
+.scrollbox div.even {
+	background: #FFFFFF;
+}
+.scrollbox div.odd {
+	background: #E4EEF7;
+}
+
+
+#footer {margin-top: 0 !important;
+padding-top: 0 !important;
+}
+
+
+
+
+
+
+
+.htabs {
+	padding: 0px 0px 0px 0px;
+	height: 35px;
+    line-height: 16px;
+	border-bottom: 1px solid #DDDDDD;
+	margin-bottom: 10px;
+
+}
+
+.htabs a.selected {
+    background: none repeat scroll 0 0 #FFF;
+    border-left: 1px solid #DDD ;
+    border-right: 1px solid #DDD ;
+    border-top: 1px solid #DDD ;
+
+	background: #FFFFFF;
+	color: #333;
+	font-weight: bold;
+	padding: 11px 15px;
+}
+
+
+.htabs a {
+
+	border-top: none;
+	border-left: none;
+	border-right: none;
+    font-weight:  normal;
+
+	background: #EFEFEF;
+	padding: 11px 15px;
+	float: left;
+	font-family: "Open Sans",sans-serif;
+	font-size: 13px;
+    line-height: 13px;
+	text-align: center;
+	text-decoration: none;
+	color: #666;
+	margin-right: 3px;
+	display: none;
+}
+
+.vtabs {
+	width: 190px;
+	padding: 10px 0px;
+	min-height: 300px;
+	float: left;
+	display: block;
+	border-right: 1px solid #DDDDDD;
+}
+.vtabs a {
+	display: none;
+}
+.vtabs a, .vtabs span {
+	display: block;
+	float: left;
+	width: 160px;
+	margin-bottom: 3px;
+	clear: both;
+	/*
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;*/
+	background: #F7F7F7;
+	padding: 4px 14px 4px 7px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: right;
+	text-decoration: none;
+	color: #000000;
+}
+.vtabs a.selected {
+	padding-right: 15px;
+	background: #FFFFFF;
+}
+.vtabs a img, .vtabs span img {
+	position: relative;
+	top: 3px;
+	cursor: pointer;
+}
+.vtabs-content {
+	margin-left: 205px;
+}
+
+
+
+.vtabs a {
+font-size: 15px;
+font-weight: normal;
+background: url("") 0 0  #DFDFDF;
+min-width: 200px;
+width: 200px;
+font-family: 'Open Sans', sans-serif;
+overflow: hidden;
+
+}
+/* #ACEEAD */
+.vtabs a.selected {
+    background: none repeat scroll 0 0 #7D00A6;
+/*
+ padding-right: 15px;
+    margin-right: -15px;
+    */
+    /*
+    border-bottom: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+    */
+    color: #FFF;
+}
+
+
+
+
+.vtabs {
+font-size: 15px;
+font-weight: normal;
+min-width: 200px;
+width: auto;
+margin-right: 10px;
+}
+
+
+
+ a.markbutton {
+	text-decoration: none !important;
+	color: #FFF;
+	display: inline-block;
+	padding: 4px 10px 4px 10px;
+	font-size: 15px;
+	background: green;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	cursor: pointer;
+   /*
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	*/
+
+}
+
+a.markbutton div:nth-child(1) {
+float: left;
+padding-top: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+height: 28px;
+}
+a.markbutton div:nth-child(2) {
+float: left;
+padding-top: 3px;
+margin-top: 0px;
+margin-bottom: -3px;
+margin-left: 7px;
+height: 28px;
+}
+
+a.markactive { background-color: #7D00A6 !important;
+}
+
+
+
+
+ a.markbuttono {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+	background: orange;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	cursor: pointer;
+}
+
+.loader {
+
+	color: #FFF;
+	background: #DDD  !important;
+
+}
+
+.mbutton
+{
+margin-left: 5px;
+
+}
+ a.mbutton {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 4px 10px 4px 10px;
+	font-size: 15px;
+	background: #FF4400;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	cursor: pointer;
+}
+
+ a.mbuttonr {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 7px 17px 7px 17px;
+	font-size: 16px;
+	background: #b20101;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	cursor: pointer;
+}
+
+ a.mbuttonh {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 7px 17px 7px 17px;
+	font-size: 16px;
+	background: #059DFC;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	cursor: pointer;
+}
+
+.mytable {width: 100%;
+}
+.mytable thead, tfoot  {background: #ddefd9; height: 40px; }
+.mytable thead td { padding-left: 10px; font-size: 15px; font-weight: normal;}
+
+.mytable tbody tr:nth-child(2n-1) {background: #f8f8f8;}
+
+.tabcontent tr:nth-child(even) {
+    background: none repeat scroll 0 0 #f8f8f8;
+}
+
+
+.mytable td { padding: 5px;}
+.mynotable td {padding: 5px;}
+
+.mytable .desc {
+    background: url("../image/desc.png") no-repeat scroll right center transparent;
+    padding-right: 15px;
+}
+
+.mytable .asc {
+    background: url("../image/asc.png") no-repeat scroll right center transparent;
+    padding-right: 15px;
+}
+
+ a.markbutton-active {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 6px 16px 3px 16px;
+	font-size: 15px;
+	line-height: 20px;
+	background: #7D00A6;
+   /*
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	*/
+}
+
+a.hrefajax {
+ text-decoration: none;
+ border-bottom:1px dashed;
+}
+
+.colpick {z-index: 10000 !important;
+}
+
+#seocms-menu > a {
+padding-bottom: 8px !important;
+}
+
+.fa-gear:before,
+.fa-seocmspro:before {
+  content: "\f013";
+}
+.scp_grad {
+ background: #EFEFEF;
+ background: -moz-linear-gradient(top, #EFEFEF 0%, #ffffff 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EFEFEF), color-stop(100%,#ffffff));
+ background: -webkit-linear-gradient(top, #EFEFEF 0%,#ffffff 100%);
+ background: -o-linear-gradient(top, #EFEFEF 0%,#ffffff 100%);
+ background: -ms-linear-gradient(top, #EFEFEF 0%,#ffffff 100%);
+ background: linear-gradient(to bottom, #EFEFEF 0%,#ffffff 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EFEFEF', endColorstr='#ffffff',GradientType=0 );
+ font-size: 15px;
+}
+
+.scp_grad_green {
+ background: #aceead;
+ background: -moz-linear-gradient(top, #aceead 0%, #ffffff 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aceead), color-stop(100%,#ffffff));
+ background: -webkit-linear-gradient(top, #aceead 0%,#ffffff 100%);
+ background: -o-linear-gradient(top, #aceead 0%,#ffffff 100%);
+ background: -ms-linear-gradient(top, #aceead 0%,#ffffff 100%);
+ background: linear-gradient(to bottom, #aceead 0%,#ffffff 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aceead', endColorstr='#ffffff',GradientType=0 );
+ font-size: 11px;
+}
+
+
+.help {
+    color: #999;
+    display: block;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+.nohref {cursor: pointer;
+}
+
+.group_button_top {display: none;
+}
+
+.button_up {height: 28px;
+width: 13px;
+background: url("../image/agootemplates-up.png") no-repeat scroll center center transparent;
+}
+.button_down {
+height: 28px;
+width: 13px;
+background: url("../image/agootemplates-down.png") no-repeat scroll center center transparent;
+}
+td {padding-bottom: 4px;
+padding-right: 5px;
+}
+.up_down {cursor: pointer;
+min-width: 16px !important;
+}
+
+.button_purple { background: none repeat scroll 0 0 #b20101 !important;
+}
+
+.button_blue {
+ background: none repeat scroll 0 0 #059dfc !important;
+}
+
+.button_orange {
+ background: none repeat scroll 0 0 #ff4400 !important;
+}
+
+button.close {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    padding: 0;
+    color: #000000;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    opacity: 0.2;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.color_green {color: green;
+}
+.required {color: red;
+}
+
+.error {width: 100%;
+overflow: hidden;
+display:inline-block;
+color: red;
+}
+
+table.form {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+table.form > tbody > tr > td:first-child {
+	width: 200px;
+}
+table.form > tbody > tr > td {
+	padding: 10px;
+	color: #000000;
+	border-bottom: 1px dotted #CCCCCC;
+}
+.entry_td { background-color: #EFEFEF;
+}
+
+.table_width_100 { width: 100%;
+}
+
+.td_width {	width: 25%;
+}
+
+.margintop5px {margin-top: 5px;
+}

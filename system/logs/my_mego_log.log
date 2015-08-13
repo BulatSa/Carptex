@@ -1,0 +1,708 @@
+2015-04-25 18:55:09 - PHP Warning:  Invalid argument supplied for foreach() in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 229
+2015-04-25 18:55:09 - PHP Warning:  Invalid argument supplied for foreach() in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 229
+2015-04-25 18:56:15 - PHP Warning:  Invalid argument supplied for foreach() in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 229
+2015-04-25 18:56:15 - PHP Warning:  Invalid argument supplied for foreach() in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 229
+2015-04-25 19:00:09 - PHP Warning:  Invalid argument supplied for foreach() in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 229
+2015-04-25 19:00:09 - PHP Warning:  Invalid argument supplied for foreach() in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 229
+2015-04-26 14:48:24 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT * FROM oc_product p LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) WHERE p.product_id = '40' AND pd.language_id = '1' AND p.date_available <= NOW() AND p.status = '1' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-04-27 10:36:14 - PHP Notice:  Undefined index: show_in_module in /home/u297281350/public_html/vqmod/vqcache/vq2-admin_controller_catalog_category.php on line 369
+2015-04-27 10:36:14 - PHP Notice:  Undefined index: show_in_subcategory in /home/u297281350/public_html/vqmod/vqcache/vq2-admin_controller_catalog_category.php on line 376
+2015-04-27 10:36:14 - PHP Notice:  Undefined index: show_in_module in /home/u297281350/public_html/vqmod/vqcache/vq2-admin_controller_catalog_category.php on line 383
+2015-04-27 10:36:14 - PHP Notice:  Undefined index: show_in_subcategory in /home/u297281350/public_html/vqmod/vqcache/vq2-admin_controller_catalog_category.php on line 390
+2015-04-27 10:36:32 - PHP Notice:  Undefined index: show_in_module in /home/u297281350/public_html/vqmod/vqcache/vq2-admin_controller_catalog_category.php on line 369
+2015-04-27 10:36:32 - PHP Notice:  Undefined index: show_in_subcategory in /home/u297281350/public_html/vqmod/vqcache/vq2-admin_controller_catalog_category.php on line 376
+2015-04-27 10:36:32 - PHP Notice:  Undefined index: show_in_module in /home/u297281350/public_html/vqmod/vqcache/vq2-admin_controller_catalog_category.php on line 383
+2015-04-27 10:36:32 - PHP Notice:  Undefined index: show_in_subcategory in /home/u297281350/public_html/vqmod/vqcache/vq2-admin_controller_catalog_category.php on line 390
+2015-04-27 17:29:54 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT * FROM oc_store ORDER BY url in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-04-29 12:09:13 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT * FROM oc_product_to_store WHERE product_id = '35' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-04-29 14:31:41 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT * FROM oc_category_to_store WHERE category_id = '27' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-06 13:39:16 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:40:49 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:40:49 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:40:49 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:40:49 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:40:49 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:40:49 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:40:49 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:40:49 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:40:49 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:43:26 - PHP Notice:  Undefined variable: category_info in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:43:26 - PHP Notice:  Undefined variable: category_info in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:43:26 - PHP Notice:  Undefined variable: category_info in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:43:26 - PHP Notice:  Undefined variable: category_info in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:43:26 - PHP Notice:  Undefined variable: category_info in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:43:26 - PHP Notice:  Undefined variable: category_info in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:43:26 - PHP Notice:  Undefined variable: category_info in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:43:26 - PHP Notice:  Undefined variable: category_info in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 13:43:26 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:45:05 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:45:10 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:45:13 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:47:54 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:48:14 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:49:17 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 114
+2015-05-06 13:49:40 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:49:46 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:49:49 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:49:52 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 13:49:57 - PHP Notice:  Undefined variable: short_desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-06 14:19:24 - PHP Notice:  Undefined variable: category in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:19:24 - PHP Notice:  Undefined variable: category in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:19:24 - PHP Notice:  Undefined variable: category in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:19:24 - PHP Notice:  Undefined variable: category in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:19:24 - PHP Notice:  Undefined variable: category in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:19:24 - PHP Notice:  Undefined variable: category in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:19:24 - PHP Notice:  Undefined variable: category in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:19:24 - PHP Notice:  Undefined variable: category in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:05 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:05 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:05 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:05 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:05 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:05 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:05 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:05 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:31 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:31 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:31 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:31 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:31 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:31 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:31 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:31 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:40 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:40 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:40 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:40 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:40 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:40 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:40 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:40 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:50 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:50 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:50 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:50 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:50 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:50 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:50 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:50 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:52 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:52 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:52 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:52 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:52 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:52 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:52 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:20:52 - PHP Notice:  Undefined index: short_desc2 in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 14:44:20 - PHP Notice:  Undefined variable: category_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_model_catalog_category.php on line 24
+2015-05-06 14:44:20 - PHP Notice:  Error: Incorrect usage of UNION and ORDER BY<br />Error No: 1221<br />SELECT * FROM oc_category c LEFT JOIN oc_category_description cd ON (c.category_id = cd.category_id) LEFT JOIN oc_category_to_store c2s ON (c.category_id = c2s.category_id) WHERE c.parent_id = '71' AND cd.language_id = '1' AND c2s.store_id = '0'  AND c.status = '1' ORDER BY c.sort_order, LCASE(cd.name) 
+			UNION 
+			(SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_short_desc cd ON (c.category_id = cd.category_id) LEFT JOIN oc_category_to_store c2s ON (c.category_id = c2s.category_id) WHERE c.category_id = '0' AND cd.language_id = '1' AND c2s.store_id = '0' AND c.status = '1') in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-06 14:45:13 - PHP Notice:  Undefined variable: category_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_model_catalog_category.php on line 22
+2015-05-06 14:45:13 - PHP Notice:  Error: Incorrect usage of UNION and ORDER BY<br />Error No: 1221<br />SELECT * FROM oc_category c LEFT JOIN oc_category_description cd ON (c.category_id = cd.category_id) LEFT JOIN oc_category_to_store c2s ON (c.category_id = c2s.category_id) WHERE c.parent_id = '71' AND cd.language_id = '1' AND c2s.store_id = '0'  AND c.status = '1' ORDER BY c.sort_order, LCASE(cd.name) UNION (SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_short_desc cd ON (c.category_id = cd.category_id) LEFT JOIN oc_category_to_store c2s ON (c.category_id = c2s.category_id) WHERE c.category_id = '0' AND cd.language_id = '1' AND c2s.store_id = '0' AND c.status = '1') in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-06 14:45:53 - PHP Notice:  Undefined variable: category_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_model_catalog_category.php on line 22
+2015-05-06 14:45:53 - PHP Notice:  Error: Table 'u297281350_ocsto.oc_short_desc' doesn't exist<br />Error No: 1146<br />(SELECT * FROM oc_category c LEFT JOIN oc_category_description cd ON (c.category_id = cd.category_id) LEFT JOIN oc_category_to_store c2s ON (c.category_id = c2s.category_id) WHERE c.parent_id = '71' AND cd.language_id = '1' AND c2s.store_id = '0'  AND c.status = '1' ORDER BY c.sort_order, LCASE(cd.name)) UNION (SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_short_desc cd ON (c.category_id = cd.category_id) LEFT JOIN oc_category_to_store c2s ON (c.category_id = c2s.category_id) WHERE c.category_id = '0' AND cd.language_id = '1' AND c2s.store_id = '0' AND c.status = '1') in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-06 15:42:08 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:08 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:08 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:08 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:08 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:08 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:08 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:08 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:26 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:26 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:26 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:26 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:26 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:26 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:26 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:26 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:47 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:47 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:47 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:47 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:47 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:47 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:47 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:42:47 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:43:18 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:43:18 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:43:18 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:43:18 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:43:18 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:43:18 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:43:18 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:43:18 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:53:34 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:53:34 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:53:34 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:53:34 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:53:34 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:53:34 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:53:34 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:53:34 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:32 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:32 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:32 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:32 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:32 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:32 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:32 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:32 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:43 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:43 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:43 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:43 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:43 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:43 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:43 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:43 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:56 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:56 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:56 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:56 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:56 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:56 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:56 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:54:56 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:55:02 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:55:02 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:55:02 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:55:02 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:55:02 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:55:02 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:55:02 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 15:55:02 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 16:23:59 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 16:23:59 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 16:23:59 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 16:23:59 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 16:23:59 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 16:23:59 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 16:23:59 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-06 16:23:59 - PHP Notice:  Undefined index: desc in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 34
+2015-05-08 19:39:43 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:39:43 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:39:43 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:39:43 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:40:07 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:40:07 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:40:07 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:40:07 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:40:53 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:40:53 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:40:53 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:40:53 - PHP Notice:  Array to string conversion in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 76
+2015-05-08 19:42:51 - PHP Notice:  Undefined variable: attribute_groups in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 77
+2015-05-08 19:42:51 - PHP Notice:  Undefined variable: attribute_groups in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 77
+2015-05-08 19:42:51 - PHP Notice:  Undefined variable: attribute_groups in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 77
+2015-05-08 19:42:51 - PHP Notice:  Undefined variable: attribute_groups in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 77
+2015-05-10 17:46:55 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT tr2.tax_rate_id, tr2.name, tr2.rate, tr2.type, tr1.priority FROM oc_tax_rule tr1 LEFT JOIN oc_tax_rate tr2 ON (tr1.tax_rate_id = tr2.tax_rate_id) INNER JOIN oc_tax_rate_to_customer_group tr2cg ON (tr2.tax_rate_id = tr2cg.tax_rate_id) LEFT JOIN oc_zone_to_geo_zone z2gz ON (tr2.geo_zone_id = z2gz.geo_zone_id) LEFT JOIN oc_geo_zone gz ON (tr2.geo_zone_id = gz.geo_zone_id) WHERE tr1.tax_class_id = '9' AND tr1.based = 'shipping' AND tr2cg.customer_group_id = '1' AND z2gz.country_id = '176' AND (z2gz.zone_id = '0' OR z2gz.zone_id = '2761') ORDER BY tr1.priority ASC in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-10 17:46:55 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT * FROM `oc_language` WHERE status = '1' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-10 17:46:55 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT * FROM `oc_language` WHERE status = '1' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: text_qty in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 111
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 114
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: text_qty in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 111
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 114
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: text_qty in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 111
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 114
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: text_qty in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 111
+2015-05-10 20:16:29 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 114
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: text_qty in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 111
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 114
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: text_qty in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 111
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 114
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: text_qty in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 111
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 114
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: text_qty in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 111
+2015-05-10 20:16:50 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 114
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 113
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 113
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 113
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: minimum in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 109
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: product_id in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 110
+2015-05-10 20:17:17 - PHP Notice:  Undefined variable: text_or in /home/u297281350/public_html/vqmod/vqcache/vq2-catalog_view_theme_default_template_product_category.tpl on line 113
+2015-05-11 9:25:02 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_category_path cp LEFT JOIN oc_product_to_category p2c ON (cp.category_id = p2c.category_id) LEFT JOIN oc_product p ON (p2c.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= '2015-05-11 09:24:00' AND p2s.store_id = '0' AND cp.path_id = '86' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-11 10:43:54 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd ON (c.category_id = cd.category_id) LEFT JOIN oc_category_to_store c2s ON (c.category_id = c2s.category_id) WHERE c.category_id = '20' AND cd.language_id = '1' AND c2s.store_id = '0' AND c.status = '1' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-11 12:51:56 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd ON (c.category_id = cd.category_id) LEFT JOIN oc_category_to_store c2s ON (c.category_id = c2s.category_id) WHERE c.category_id = '20' AND cd.language_id = '1' AND c2s.store_id = '0' AND c.status = '1' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-12 11:40:57 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT * FROM `oc_language` WHERE status = '1' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-14 8:15:50 - PHP Warning:  Invalid argument supplied for foreach() in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 229
+2015-05-14 8:15:50 - PHP Warning:  Invalid argument supplied for foreach() in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 229
+2015-05-14 17:41:47 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT * FROM oc_url_alias_blog WHERE `query` = 'blog_id=2' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-14 17:51:22 - PHP Notice:  Error: Could not load template /home/u297281350/public_html/catalog/view/theme/default/template/agoodonut/widgets/html/blog_menu.tpl! in /home/u297281350/public_html/vqmod/vqcache/vq2-system_engine_controller.php on line 70
+2015-05-14 17:51:24 - PHP Notice:  Error: Could not load template /home/u297281350/public_html/catalog/view/theme/default/template/agoodonut/widgets/html/blog_menu.tpl! in /home/u297281350/public_html/vqmod/vqcache/vq2-system_engine_controller.php on line 70
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 136
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 152
+2015-05-14 18:46:56 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/admin/view/template/module/blog_schemes.tpl on line 154
+2015-05-14 18:46:59 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/catalog/controller/common/column_left.php on line 50
+2015-05-14 18:46:59 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/catalog/controller/common/column_right.php on line 50
+2015-05-14 18:46:59 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/catalog/controller/common/content_top.php on line 50
+2015-05-14 18:46:59 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/catalog/controller/module/blog.php on line 192
+2015-05-14 18:47:02 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/catalog/controller/common/column_left.php on line 50
+2015-05-14 18:47:02 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/catalog/controller/common/column_right.php on line 50
+2015-05-14 18:47:02 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/catalog/controller/common/content_top.php on line 50
+2015-05-14 18:47:02 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/catalog/controller/module/blog.php on line 192
+2015-05-14 18:47:02 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/catalog/controller/module/blog.php on line 192
+2015-05-14 18:47:02 - PHP Notice:  Undefined index: layout_id in /home/u297281350/public_html/catalog/controller/common/content_bottom.php on line 50
+2015-05-15 12:01:08 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT * FROM oc_setting WHERE store_id = '0' AND `group` = 'blogadmin' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-15 12:01:09 - PHP Notice:  Error: Lost connection to MySQL server during query<br />Error No: 2013<br />SELECT * FROM `oc_language` WHERE status = '1' in /home/u297281350/public_html/system/database/mysql.php on line 50
+2015-05-15 15:03:50 - PHP Notice:  Undefined index: record_id in /home/u297281350/public_html/admin/view/template/module/blog_list_records.tpl on line 179
+2015-05-15 15:03:50 - PHP Notice:  Undefined index: name in /home/u297281350/public_html/admin/view/template/module/blog_list_records.tpl on line 179
+2015-05-15 15:03:50 - PHP Notice:  Undefined index: record_id in /home/u297281350/public_html/admin/view/template/module/blog_list_records.tpl on line 180
+2015-05-28 18:18:13 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 18:18:13 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 18:18:13 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 18:18:13 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 18:18:13 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 18:18:13 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 18:18:13 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 18:18:13 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 18:18:13 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 28
+2015-05-28 18:18:13 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 29
+2015-05-28 18:19:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 18:19:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 18:19:12 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 18:19:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 18:19:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 18:19:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 18:19:12 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 18:19:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 18:19:12 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 28
+2015-05-28 18:19:12 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 29
+2015-05-28 18:26:18 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:07:15 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:07:15 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:07:15 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:07:15 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:07:15 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:07:15 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:07:15 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:07:15 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:07:15 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 28
+2015-05-28 19:07:15 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 29
+2015-05-28 19:08:35 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:08:35 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:08:35 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:08:35 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:08:35 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:08:35 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:08:35 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:08:35 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:08:35 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 28
+2015-05-28 19:08:35 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 29
+2015-05-28 19:08:49 - PHP Warning:  Illegal string offset 'what_hook' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:08:49 - PHP Warning:  Illegal string offset 'type' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:08:49 - PHP Warning:  Illegal string offset 'type' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:08:49 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:08:49 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:08:49 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:08:49 - PHP Warning:  array_intersect(): Argument #1 is not an array in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:08:49 - PHP Warning:  Illegal string offset 'type' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:08:49 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:08:49 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:08:49 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:08:49 - PHP Warning:  array_intersect(): Argument #1 is not an array in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:06 - PHP Warning:  Illegal string offset 'what_hook' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:09:06 - PHP Warning:  Illegal string offset 'type' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:09:06 - PHP Warning:  Illegal string offset 'type' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:09:06 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:06 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:06 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:06 - PHP Warning:  array_intersect(): Argument #1 is not an array in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:06 - PHP Warning:  Illegal string offset 'type' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:09:06 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:06 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:06 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:06 - PHP Warning:  array_intersect(): Argument #1 is not an array in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:08 - PHP Warning:  Illegal string offset 'type' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:09:08 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:08 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:08 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:08 - PHP Warning:  array_intersect(): Argument #1 is not an array in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:08 - PHP Warning:  Illegal string offset 'type' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:09:08 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:08 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:08 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:08 - PHP Warning:  array_intersect(): Argument #1 is not an array in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:14 - PHP Warning:  Illegal string offset 'what_hook' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:09:14 - PHP Warning:  Illegal string offset 'type' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:09:14 - PHP Warning:  Illegal string offset 'type' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:09:14 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:14 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:14 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:14 - PHP Warning:  array_intersect(): Argument #1 is not an array in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:14 - PHP Warning:  Illegal string offset 'type' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 241
+2015-05-28 19:09:14 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:14 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 269
+2015-05-28 19:09:14 - PHP Warning:  Illegal string offset 'customer_groups' in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:09:14 - PHP Warning:  array_intersect(): Argument #1 is not an array in /home/b/basstr/carptex.ru/public_html/catalog/controller/module/blog.php on line 272
+2015-05-28 19:10:13 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:10:17 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:10:17 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:10:17 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:10:17 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:10:17 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:10:17 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:10:17 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:10:34 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:10:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:10:34 - PHP Notice:  Undefined index: what in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 268
+2015-05-28 19:10:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:10:34 - PHP Notice:  Undefined index: what in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 268
+2015-05-28 19:10:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:10:49 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:10:49 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:10:49 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:10:49 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:10:54 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:11:06 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:11:06 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:11:06 - PHP Notice:  Undefined index: what in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 268
+2015-05-28 19:11:06 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:11:06 - PHP Notice:  Undefined index: what in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 268
+2015-05-28 19:11:06 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:11:42 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:11:42 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:11:42 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:11:42 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:11:42 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:11:42 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:11:42 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:11:42 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:11:42 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 28
+2015-05-28 19:11:42 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 29
+2015-05-28 19:11:59 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:12:24 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:12:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:12:24 - PHP Notice:  Undefined index: what in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 268
+2015-05-28 19:12:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:12:24 - PHP Notice:  Undefined index: what in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 268
+2015-05-28 19:12:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:12:41 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:12:41 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:12:41 - PHP Notice:  Undefined index: what in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 268
+2015-05-28 19:12:41 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 239
+2015-05-28 19:12:41 - PHP Notice:  Undefined index: what in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 268
+2015-05-28 19:12:41 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:12:53 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:12:53 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:13:00 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:13:00 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:13:00 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:13:00 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:13:07 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:13:22 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:13:22 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:13:24 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:13:24 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:13:24 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:13:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:13:35 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:13:53 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:14:40 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:14:40 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:14:40 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:14:40 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:14:40 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:14:40 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:14:40 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:14:40 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:14:40 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 28
+2015-05-28 19:14:40 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 29
+2015-05-28 19:14:54 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:16:22 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:16:27 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:16:31 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:16:31 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:16:31 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:16:31 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:16:32 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:16:32 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:16:33 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:18:38 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:18:38 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:18:38 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:18:38 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:18:38 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:18:38 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:18:38 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:18:38 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:18:43 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:18:45 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:18:45 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:18:47 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:18:47 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:18:49 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:18:49 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:18:49 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:18:49 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:18:53 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:18:58 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:19:08 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:19:14 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:19:14 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:19:14 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:19:14 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:19:14 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:19:14 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:19:14 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:19:14 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:19:19 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:19:26 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:19:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:19:27 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:19:27 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:19:30 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:19:30 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:19:30 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:19:30 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:19:55 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:19:55 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:19:58 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:19:58 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:19:58 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:19:58 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:19:59 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:19:59 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:20:01 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:20:05 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:20:08 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:20:08 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:20:08 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:20:08 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:20:08 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:20:08 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:20:08 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:20:08 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:20:10 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:20:13 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:20:13 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:20:14 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:20:14 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:20:16 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:20:16 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:20:16 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:20:16 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:20:22 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:20:25 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:20:58 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:20:58 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:21:01 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:21:01 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:21:03 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:21:03 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:21:04 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:21:04 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:21:04 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:21:04 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:21:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:21:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:21:12 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:21:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:21:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:21:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:21:12 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:21:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:21:12 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 28
+2015-05-28 19:21:12 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 29
+2015-05-28 19:21:18 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:21:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:21:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:21:24 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:21:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:21:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:21:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:21:24 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:21:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:21:29 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:21:33 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:21:33 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:21:33 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:21:33 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:21:33 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:21:33 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:21:33 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:21:33 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:21:35 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:21:44 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:21:44 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:21:46 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 19:21:46 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 19:21:50 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:21:50 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:21:50 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:21:50 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:21:56 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:25:43 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:25:43 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:25:43 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:25:43 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:25:43 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:25:43 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:25:43 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:25:43 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:26:12 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:26:12 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:26:12 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:26:12 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:26:25 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:26:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:26:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:26:34 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:26:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:26:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:26:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:26:34 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:26:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:26:55 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 19:26:55 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 19:26:55 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 19:26:55 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 19:26:57 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:58:53 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:59:15 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 19:59:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 19:59:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 19:59:23 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 19:59:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 19:59:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 19:59:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 19:59:23 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 19:59:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 19:59:30 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 20:00:02 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 20:00:02 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 20:00:04 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 20:00:04 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 20:00:04 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 20:00:04 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 20:00:45 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 20:00:52 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 20:01:04 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 20:01:04 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 20:01:04 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 20:01:04 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 20:01:04 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 20:01:04 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 20:01:04 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 20:01:04 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 20:01:04 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 28
+2015-05-28 20:01:04 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 29
+2015-05-28 20:01:10 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 20:01:10 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 20:01:10 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 20:01:10 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 20:01:10 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 20:01:10 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 20:01:10 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 20:01:10 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 20:01:10 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 28
+2015-05-28 20:01:10 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/admin/index.php:86) in /home/b/basstr/carptex.ru/public_html/system/engine/controller.php on line 29
+2015-05-28 20:01:18 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 20:01:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2826
+2015-05-28 20:01:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2859
+2015-05-28 20:01:23 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2866
+2015-05-28 20:01:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2896
+2015-05-28 20:01:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 20:01:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 20:01:23 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 20:01:23 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 20:01:30 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 20:01:58 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 20:02:15 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 20:02:19 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 20:02:19 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 20:02:21 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 588
+2015-05-28 20:02:21 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_schemes.tpl on line 402
+2015-05-28 20:02:24 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 817
+2015-05-28 20:02:24 - PHP Warning:  reset() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 267
+2015-05-28 20:02:24 - PHP Warning:  key() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 273
+2015-05-28 20:02:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/view/template/module/blog_widgets.tpl on line 280
+2015-05-28 20:02:33 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 20:02:39 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 20:02:47 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 345
+2015-05-28 20:04:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2617
+2015-05-28 20:04:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2703
+2015-05-28 20:04:24 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2712
+2015-05-28 20:04:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2741
+2015-05-28 20:24:19 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 353
+2015-05-28 20:26:44 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 353
+2015-05-28 20:27:51 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 353
+2015-05-28 20:27:57 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2875
+2015-05-28 20:27:57 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2908
+2015-05-28 20:27:57 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2915
+2015-05-28 20:27:57 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2945
+2015-05-28 20:27:57 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2666
+2015-05-28 20:27:57 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2752
+2015-05-28 20:27:57 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2761
+2015-05-28 20:27:57 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2790
+2015-05-28 20:28:02 - PHP Warning:  ksort() expects parameter 1 to be array, string given in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 353
+2015-05-28 20:29:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2880
+2015-05-28 20:29:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2913
+2015-05-28 20:29:24 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2920
+2015-05-28 20:29:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2950
+2015-05-28 20:29:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2671
+2015-05-28 20:29:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2757
+2015-05-28 20:29:24 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2766
+2015-05-28 20:29:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2795
+2015-05-28 20:29:32 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2671
+2015-05-28 20:29:32 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2757
+2015-05-28 20:29:32 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2766
+2015-05-28 20:29:32 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2795
+2015-05-28 20:35:07 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2877
+2015-05-28 20:35:07 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2910
+2015-05-28 20:35:07 - PHP Notice:  Array to string conversion in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2917
+2015-05-28 20:35:07 - PHP Warning:  Invalid argument supplied for foreach() in /home/b/basstr/carptex.ru/public_html/admin/controller/module/blog.php on line 2947
+2015-05-29 16:17:33 - PHP Notice:  Undefined index: token in /home/b/basstr/carptex.ru/public_html/admin/controller/error/not_found.php on line 16
+2015-05-29 16:17:33 - PHP Notice:  Undefined index: token in /home/b/basstr/carptex.ru/public_html/admin/controller/error/not_found.php on line 22
+2015-05-29 16:17:33 - PHP Notice:  Undefined index: token in /home/b/basstr/carptex.ru/public_html/admin/controller/error/not_found.php on line 16
+2015-05-29 16:17:33 - PHP Notice:  Undefined index: token in /home/b/basstr/carptex.ru/public_html/admin/controller/error/not_found.php on line 22
+2015-05-29 16:17:33 - PHP Notice:  Undefined index: token in /home/b/basstr/carptex.ru/public_html/admin/controller/error/not_found.php on line 16
+2015-05-29 16:17:33 - PHP Notice:  Undefined index: token in /home/b/basstr/carptex.ru/public_html/admin/controller/error/not_found.php on line 22
+2015-05-29 16:17:33 - PHP Notice:  Undefined index: token in /home/b/basstr/carptex.ru/public_html/admin/controller/error/not_found.php on line 16
+2015-05-29 16:17:33 - PHP Notice:  Undefined index: token in /home/b/basstr/carptex.ru/public_html/admin/controller/error/not_found.php on line 22
+2015-06-02 15:56:21 - PHP Notice:  Undefined index: path in /home/b/basstr/carptex.ru/public_html/catalog/controller/product/search.php on line 262
+2015-06-02 15:56:21 - PHP Notice:  Undefined index: category_id in /home/b/basstr/carptex.ru/public_html/catalog/controller/product/search.php on line 262
+2015-07-14 14:25:25 - PHP Notice:  Undefined index:  in /home/b/basstr/carptex.ru/public_html/catalog/controller/common/seo_pro.php on line 53
+2015-07-14 14:25:25 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/index.php:107) in /home/b/basstr/carptex.ru/public_html/catalog/controller/common/seo_pro.php on line 308
+2015-07-14 14:25:25 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/index.php:107) in /home/b/basstr/carptex.ru/public_html/vqmod/vqcache/vq2-system_engine_controller.php on line 28
+2015-07-14 14:25:25 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/b/basstr/carptex.ru/public_html/index.php:107) in /home/b/basstr/carptex.ru/public_html/vqmod/vqcache/vq2-system_engine_controller.php on line 29
+2015-08-10 22:20:47 - PHP Warning:  unlink(/home/b/basstr/carptex.ru/public_html/system/cache/cache.seo_pro.1439233811): No such file or directory in /home/b/basstr/carptex.ru/public_html/vqmod/vqcache/vq2-system_library_cache.php on line 26
+2015-08-10 22:20:47 - PHP Warning:  unlink(/home/b/basstr/carptex.ru/public_html/system/cache/cache.seo_pro.1439233811): No such file or directory in /home/b/basstr/carptex.ru/public_html/vqmod/vqcache/vq2-system_library_cache.php on line 26
+2015-08-10 22:20:47 - PHP Warning:  unlink(/home/b/basstr/carptex.ru/public_html/system/cache/cache.seo_pro.1439233811): No such file or directory in /home/b/basstr/carptex.ru/public_html/vqmod/vqcache/vq2-system_library_cache.php on line 26
