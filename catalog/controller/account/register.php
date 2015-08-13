@@ -23,7 +23,7 @@ class ControllerAccountRegister extends Controller {
 			unset($this->session->data['guest']);
 			
 			// Default Shipping Address
-			if ($this->config->get('config_tax_customer') == 'shipping') {
+			/*if ($this->config->get('config_tax_customer') == 'shipping') {
 				$this->session->data['shipping_country_id'] = $this->request->post['country_id'];
 				$this->session->data['shipping_zone_id'] = $this->request->post['zone_id'];
 				$this->session->data['shipping_postcode'] = $this->request->post['postcode'];				
@@ -33,7 +33,7 @@ class ControllerAccountRegister extends Controller {
 			if ($this->config->get('config_tax_customer') == 'payment') {
 				$this->session->data['payment_country_id'] = $this->request->post['country_id'];
 				$this->session->data['payment_zone_id'] = $this->request->post['zone_id'];			
-			}
+			}*/
 							  	  
 	  		$this->redirect($this->url->link('account/success'));
     	}
@@ -381,19 +381,19 @@ class ControllerAccountRegister extends Controller {
 		}
 
 		$customer_group = $this->model_account_customer_group->getCustomerGroup($customer_group_id);
-
-		if ($customer_group) {
+			
+		if ($customer_group) {	
 			// Company ID
 			if ($customer_group['company_id_display'] && $customer_group['company_id_required'] && empty($this->request->post['company_id'])) {
 				$this->error['company_id'] = $this->language->get('error_company_id');
 			}
-
-			// Tax ID
+			
+			// Tax ID 
 			if ($customer_group['tax_id_display'] && $customer_group['tax_id_required'] && empty($this->request->post['tax_id'])) {
 				$this->error['tax_id'] = $this->language->get('error_tax_id');
-			}
+			}						
 		}
-		*/
+		/*
     	if ((utf8_strlen($this->request->post['address_1']) < 3) || (utf8_strlen($this->request->post['address_1']) > 128)) {
       		$this->error['address_1'] = $this->language->get('error_address_1');
     	}
@@ -401,32 +401,32 @@ class ControllerAccountRegister extends Controller {
     	if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {
       		$this->error['city'] = $this->language->get('error_city');
     	}
+*/
+			/*$this->load->model('localisation/country');
 
-		$this->load->model('localisation/country');
-		
-		$country_info = $this->model_localisation_country->getCountry($this->request->post['country_id']);
-		
-		if ($country_info) {
-			if ($country_info['postcode_required'] && (utf8_strlen($this->request->post['postcode']) < 2) || (utf8_strlen($this->request->post['postcode']) > 10)) {
-				$this->error['postcode'] = $this->language->get('error_postcode');
-			}
-			
-			// VAT Validation
-			$this->load->helper('vat');
-			
-			if ($this->config->get('config_vat') && $this->request->post['tax_id'] && (vat_validation($country_info['iso_code_2'], $this->request->post['tax_id']) == 'invalid')) {
-				$this->error['tax_id'] = $this->language->get('error_vat');
-			}
-		}
+      $country_info = $this->model_localisation_country->getCountry($this->request->post['country_id']);
 
-    	if ($this->request->post['country_id'] == '') {
-      		$this->error['country'] = $this->language->get('error_country');
-    	}
-		
-    	if (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == '') {
-      		$this->error['zone'] = $this->language->get('error_zone');
-    	}
+      if ($country_info) {
+        if ($country_info['postcode_required'] && (utf8_strlen($this->request->post['postcode']) < 2) || (utf8_strlen($this->request->post['postcode']) > 10)) {
+          $this->error['postcode'] = $this->language->get('error_postcode');
+        }
 
+        // VAT Validation
+        $this->load->helper('vat');
+
+        if ($this->config->get('config_vat') && $this->request->post['tax_id'] && (vat_validation($country_info['iso_code_2'], $this->request->post['tax_id']) == 'invalid')) {
+          $this->error['tax_id'] = $this->language->get('error_vat');
+        }
+      }
+
+        if ($this->request->post['country_id'] == '') {
+            $this->error['country'] = $this->language->get('error_country');
+        }
+
+        if (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == '') {
+            $this->error['zone'] = $this->language->get('error_zone');
+        }
+  */
     	if ((utf8_strlen($this->request->post['password']) < 4) || (utf8_strlen($this->request->post['password']) > 20)) {
       		$this->error['password'] = $this->language->get('error_password');
     	}
