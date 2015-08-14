@@ -15,10 +15,10 @@
   <span class="required">*</span> <?php echo $entry_telephone; ?><br />
   <input type="text" name="telephone" value="<?php echo $telephone; ?>" class="large-field" />
   <br />
-  <br />
+  <!-- <br />
   <?php echo $entry_fax; ?><br />
   <input type="text" name="fax" value="<?php echo $fax; ?>" class="large-field" />
-  <br />
+  <br /> -->
   <br />
 </div>
 <div class="right">

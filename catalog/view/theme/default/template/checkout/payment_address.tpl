@@ -1,6 +1,6 @@
 <?php if ($addresses) { ?>
 <input type="radio" name="payment_address" value="existing" id="payment-address-existing" checked="checked" />
-<label for="payment-address-existing"><?php echo $text_address_existing; ?></label>
+<label for="payment-address-existing"><?php echo $text_address_existing; ?> (изменить и добавить свой адрес вы можете в личном кабинете)</label>
 <div id="payment-existing">
   <select name="address_id" style="width: 100%; margin-bottom: 15px;" size="5">
     <?php foreach ($addresses as $address) { ?>

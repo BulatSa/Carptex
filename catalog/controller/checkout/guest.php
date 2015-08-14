@@ -217,8 +217,8 @@ class ControllerCheckoutGuest extends Controller {
 			}
 			
 			$customer_group = $this->model_account_customer_group->getCustomerGroup($customer_group_id);
-				
-			if ($customer_group) {	
+
+			if ($customer_group) {
 				// Company ID
 				if ($customer_group['company_id_display'] && $customer_group['company_id_required'] && empty($this->request->post['company_id'])) {
 					$json['error']['company_id'] = $this->language->get('error_company_id');
@@ -270,7 +270,7 @@ class ControllerCheckoutGuest extends Controller {
 			$this->session->data['guest']['lastname'] = $this->request->post['lastname'];
 			$this->session->data['guest']['email'] = $this->request->post['email'];
 			$this->session->data['guest']['telephone'] = $this->request->post['telephone'];
-			$this->session->data['guest']['fax'] = $this->request->post['fax'];
+			//$this->session->data['guest']['fax'] = $this->request->post['fax'];
 			
 			$this->session->data['guest']['payment']['firstname'] = $this->request->post['firstname'];
 			$this->session->data['guest']['payment']['lastname'] = $this->request->post['lastname'];				
