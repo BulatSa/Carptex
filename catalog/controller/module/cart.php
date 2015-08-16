@@ -98,7 +98,8 @@ class ControllerModuleCart extends Controller {
 			} else {
 				$total = false;
 			}
-													
+
+			$bu_href_prod = str_replace('product/product', 'product/category', $this->url->link('product/product', 'product_id=' . $product['product_id']));
 			$this->data['products'][] = array(
 				'key'      => $product['key'],
 				'thumb'    => $image,
@@ -108,7 +109,7 @@ class ControllerModuleCart extends Controller {
 				'quantity' => $product['quantity'],
 				'price'    => $price,	
 				'total'    => $total,	
-				'href'     => $this->url->link('product/product', 'product_id=' . $product['product_id'])		
+				'href'     => str_replace('product_id=' . $product['product_id'], '', $bu_href_prod)
 			);
 		}
 		
