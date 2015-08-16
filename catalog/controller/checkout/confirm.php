@@ -351,8 +351,10 @@ class ControllerCheckoutConfirm extends Controller {
 						'name'  => $option['name'],
 						'value' => (utf8_strlen($value) > 20 ? utf8_substr($value, 0, 20) . '..' : $value)
 					);
-				}  
-	 
+				}
+
+				$bu_href_prod = str_replace('product/product', 'product/category', $this->url->link('product/product', 'product_id=' . $product['product_id']));
+				$bu_href_prod = str_replace('product_id=' . $product['product_id'], '', $bu_href_prod);
 				$this->data['products'][] = array(
 					'product_id' => $product['product_id'],
 					'name'       => $product['name'],
@@ -362,7 +364,7 @@ class ControllerCheckoutConfirm extends Controller {
 					'subtract'   => $product['subtract'],
 					'price'      => $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax'))),
 					'total'      => $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax')) * $product['quantity']),
-					'href'       => $this->url->link('product/product', 'product_id=' . $product['product_id'])
+					'href'       => $bu_href_prod //$this->url->link('product/product', 'product_id=' . $product['product_id'])
 				); 
 			} 
 			
