@@ -230,11 +230,14 @@ class ControllerCheckoutCart extends Controller {
 				} else {
 					$total = false;
 				}
-				
+						// New link to Category
+						$bu_href_prod = str_replace('product/product', 'product/category', $this->url->link('product/product', 'product_id=' . $product['product_id']));
+						$bu_href_prod = str_replace('product_id=' . $product['product_id'], '', $bu_href_prod);
+
         		$this->data['products'][] = array(
           			'key'      => $product['key'],
           			'thumb'    => $image,
-					'name'     => $product['name'],
+								'name'     => $product['name'],
           			'model'    => $product['model'],
           			'option'   => $option_data,
           			'quantity' => $product['quantity'],
@@ -242,7 +245,7 @@ class ControllerCheckoutCart extends Controller {
 					'reward'   => ($product['reward'] ? sprintf($this->language->get('text_points'), $product['reward']) : ''),
 					'price'    => $price,
 					'total'    => $total,
-					'href'     => $this->url->link('product/product', 'product_id=' . $product['product_id']),
+					'href'     => $bu_href_prod, //$this->url->link('product/product', 'product_id=' . $product['product_id']),
 					'remove'   => $this->url->link('checkout/cart', 'remove=' . $product['key'])
 				);
       		}
