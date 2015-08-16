@@ -122,7 +122,7 @@ class ControllerCheckoutConfirm extends Controller {
 				$data['lastname'] = $this->customer->getLastName();
 				$data['email'] = $this->customer->getEmail();
 				$data['telephone'] = $this->customer->getTelephone();
-				$data['fax'] = $this->customer->getFax();
+				$data['fax'] = '';//$this->customer->getFax();
 			
 				$this->load->model('account/address');
 				
@@ -134,7 +134,7 @@ class ControllerCheckoutConfirm extends Controller {
 				$data['lastname'] = $this->session->data['guest']['lastname'];
 				$data['email'] = $this->session->data['guest']['email'];
 				$data['telephone'] = $this->session->data['guest']['telephone'];
-				$data['fax'] = $this->session->data['guest']['fax'];
+				$data['fax'] = '';//$this->session->data['guest']['fax'];
 				
 				$payment_address = $this->session->data['guest']['payment'];
 			}
