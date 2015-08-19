@@ -48,7 +48,7 @@ form {
 	margin: 0;
 	display: inline;
 }
-input[type='text'], input[type='password'], textarea {
+input[type='text'], input[type='password'], input[type='date'], textarea {
 	background: #F8F8F8;
 	border: 1px solid #00e4ffCCC;
 	padding: 3px;

@@ -34,12 +34,17 @@
     </div>
     <div class="mini-cart-total">
       <table>
+        <?$total_sum = 0;?>
         <?php foreach ($totals as $total) { ?>
         <tr>
           <td class="right"><b><?php echo $total['title']; ?>:</b></td>
           <td class="right"><?php echo $total['text']; ?></td>
         </tr>
+        <? $total_sum = $total_sum + (int)$total['text']?>
         <?php } ?>
+        <?if ($total_sum > 1000) {
+            echo "<tr><td>Минимальная сумма заказа от 1000 руб.</td></tr>";
+          } ?>
       </table>
     </div>
     <div class="checkout"><a href="<?php echo $cart; ?>"><?php echo $text_cart; ?></a> | <a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div>
