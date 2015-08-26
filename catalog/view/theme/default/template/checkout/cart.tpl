@@ -16,7 +16,7 @@
     <?php } ?>
   </div>
   <h1><?php echo $heading_title; ?>
-    <?php if ($weight) { ?>
+    <?php if ($weight > 0) { ?>
     &nbsp;(<?php echo $weight; ?>)
     <?php } ?>
   </h1>
