@@ -185,16 +185,28 @@
       <?php foreach ($totals as $total) { ?>
       <tr>
         <td class="right"><b><?php echo $total['title']; ?>:</b></td>
-        <td class="right"><?php echo $total['text']; ?></td>
+        <td class="right right_total_price"><?php echo $total['text']; ?></td>
       </tr>
       <?php } ?>
     </table>
   </div>
   <div class="buttons">
-    <div class="right"><a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a></div>
+    <div class="right pay-block"><a href="<?php echo $checkout; ?>" class="button button_checkout"><?php echo $button_checkout; ?></a></div>
     <div class="center"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_shopping; ?></a></div>
   </div>
   <?php echo $content_bottom; ?></div>
+<script>
+  //Check min pay
+  s = document.querySelector('.right_total_price').textContent; //Get total pay
+  s = s.slice(0, s.length-6);
+  bottom = document.querySelector('.pay-block');
+  if (s < 1000) {
+    var newWarning = document.createElement('p');
+    newWarning.innerHTML = 'Минимальная сумма заказа от 1000 руб.';
+    bottom.appendChild(newWarning);
+    document.querySelector(".button_checkout").textContent = "";
+  }
+</script>
 <script type="text/javascript"><!--
 $('input[name=\'next\']').bind('change', function() {
 	$('.cart-module > div').hide();
