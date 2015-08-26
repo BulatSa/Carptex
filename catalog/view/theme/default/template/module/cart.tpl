@@ -47,7 +47,11 @@
           } ?>
       </table>
     </div>
-    <div class="checkout"><a href="<?php echo $cart; ?>"><?php echo $text_cart; ?></a> | <a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div>
+    <?if ($total_sum < 1000) {
+        echo "<div class='checkout'><a href='$cart'>$text_cart</a> | <a href='$checkout'>$text_checkout</a></div>"; // Сумма > 1000
+      } else {
+          echo "<div class='checkout'><a href='$cart'>$text_cart</a></div>"; // Сумма < 1000
+        } ?>
     <?php } else { ?>
     <div class="empty"><?php echo $text_empty; ?></div>
     <?php } ?>
