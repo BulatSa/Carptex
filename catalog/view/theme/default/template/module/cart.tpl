@@ -40,17 +40,17 @@
           <td class="right"><b><?php echo $total['title']; ?>:</b></td>
           <td class="right"><?php echo $total['text']; ?></td>
         </tr>
-        <? $total_sum = $total_sum + (int)$total['text']?>
+        <? $total_sum = (int)$total['text']?>
         <?php } ?>
-        <?if ($total_sum > 1000) {
-            echo "<tr><td>Минимальная сумма заказа от 1000 руб.</td></tr>";
+        <?if ($total_sum < 737) {
+            echo "<tr><td>Минимальная сумма заказа от 738 руб.</td></tr>";
           } ?>
       </table>
     </div>
-    <?if ($total_sum < 1000) {
-        echo "<div class='checkout'><a href='$cart'>$text_cart</a> | <a href='$checkout'>$text_checkout</a></div>"; // Сумма > 1000
+    <?if ($total_sum > 737) {
+        echo "<div class='checkout'><a href='$cart'>$text_cart</a> | <a href='$checkout'>$text_checkout</a></div>"; 
       } else {
-          echo "<div class='checkout'><a href='$cart'>$text_cart</a></div>"; // Сумма < 1000
+          echo "<div class='checkout'><a href='$cart'>$text_cart</a></div>";
         } ?>
     <?php } else { ?>
     <div class="empty"><?php echo $text_empty; ?></div>

@@ -200,9 +200,9 @@
   s = document.querySelector('.right_total_price').textContent; //Get total pay
   s = s.slice(0, s.length-6);
   bottom = document.querySelector('.pay-block');
-  if (s < 1000) {
+  if (s < 737) {
     var newWarning = document.createElement('p');
-    newWarning.innerHTML = 'Минимальная сумма заказа от 1000 руб.';
+    newWarning.innerHTML = 'Минимальная сумма заказа от 737 руб.';
     bottom.appendChild(newWarning);
     document.querySelector(".button_checkout").textContent = "";
   }
